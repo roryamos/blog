@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rory Blog</title>
-    <link>http://example.org/</link>
+    <link>https://roryamos.github.io/blog/</link>
     <description>Recent content on Rory Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2018 Copyright Rory blog</copyright>
     <lastBuildDate>Wed, 12 Dec 2018 21:38:51 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://roryamos.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>First Post</title>
-      <link>http://example.org/2018/12/12/first-post/</link>
+      <link>https://roryamos.github.io/blog/2018/12/12/first-post/</link>
       <pubDate>Wed, 12 Dec 2018 21:38:51 +0800</pubDate>
       <author>rory.amos@gmail.com (Rory)</author>
-      <guid>http://example.org/2018/12/12/first-post/</guid>
+      <guid>https://roryamos.github.io/blog/2018/12/12/first-post/</guid>
       <description> Hello world </description>
     </item>
     
