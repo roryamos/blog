@@ -3,8 +3,49 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://roryamos.github.io/blog/2018/12/12/first-post/</loc>
+    <loc>https://roryamos.github.io/blog/2018/12/12/docker-and-docker-compose-install/</loc>
     <lastmod>2018-12-12T21:38:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://roryamos.github.io/blog/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://roryamos.github.io/blog/tags/docker/</loc>
+    <lastmod>2018-12-12T21:38:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://roryamos.github.io/blog/categories/docker/</loc>
+    <lastmod>2018-12-12T21:38:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://roryamos.github.io/blog/tags/lnmp/</loc>
+    <lastmod>2018-12-12T21:38:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://roryamos.github.io/blog/tags/mariadb/</loc>
+    <lastmod>2018-12-12T21:38:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://roryamos.github.io/blog/tags/nginx/</loc>
+    <lastmod>2018-12-12T21:38:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://roryamos.github.io/blog/tags/php/</loc>
+    <lastmod>2018-12-12T21:38:51+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -21,11 +62,7 @@
   
   <url>
     <loc>https://roryamos.github.io/blog/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://roryamos.github.io/blog/topics/</loc>
+    <lastmod>2018-12-12T21:38:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   

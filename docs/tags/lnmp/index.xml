@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rory Blog</title>
-    <link>https://roryamos.github.io/blog/</link>
-    <description>Recent content on Rory Blog</description>
+    <title>LNMP on Rory Blog</title>
+    <link>https://roryamos.github.io/blog/tags/lnmp/</link>
+    <description>Recent content in LNMP on Rory Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <lastBuildDate>Wed, 12 Dec 2018 21:38:51 +0800</lastBuildDate>
     
-	<atom:link href="https://roryamos.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://roryamos.github.io/blog/tags/lnmp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,15 +21,6 @@
  Docker Install Docker 在官網上有各種平台的安裝指南 https://docs.docker.com/install/
 我們介紹的是在 CentOS 下的安裝步驟 : 1. 安裝一台乾淨的CentOS 7 Minimal, ISO https://www.centos.org/download/ 2. 安裝 Docker # yum update # yum install -y wget # wget -qO- https://get.docker.com/ | sh  在安裝完成後會出現個提示訊息說，如果你要以非root用戶來運行Docker、你需要執行下面的命令。
 If you would like to use Docker as a non-root user, you should now consider adding your user to the &amp;quot;docker&amp;quot; group with something like: sudo usermod -aG docker your-user  3.</description>
-    </item>
-    
-    <item>
-      <title>歸檔</title>
-      <link>https://roryamos.github.io/blog/archives/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://roryamos.github.io/blog/archives/</guid>
-      <description></description>
     </item>
     
   </channel>
