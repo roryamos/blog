@@ -19,7 +19,7 @@ preserveTaxonomyNames = true
 
 [taxonomies]
     tag = "tags"
-    topic = "topics"
+                               category = "categories"
 
 [author]
     name = "Rory"
