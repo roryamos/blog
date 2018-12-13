@@ -1,8 +1,7 @@
 baseURL = "https://roryamos.github.io/blog/"
-DefaultContentLanguage = "en"
-languageCode = "en"
+languageCode = "zh-tw"
 title = "Rory Blog"
-theme = "hugo-bootstrap-premium"
+theme = "maupassant"
 publishDir = "docs"
 
 # SES friendly url:s
@@ -11,6 +10,8 @@ canonifyurls = true
 # Pagination
 paginate = 10
 paginatePath = "page"
+
+preserveTaxonomyNames = true
 
 [permalinks]
     post = "/:year/:month/:day/:filename/"
@@ -22,139 +23,41 @@ paginatePath = "page"
 
 [author]
     name = "Rory"
-    email = "rory.amos@gmail.com"
-
-[params.popover]
-    # This is a highly configurable popover form.
-    enablepopover = false #enable or disable popover: true/false.
-    posturl = "https://zapier.com/hooks/..."
-    headerimage = "//placehold.it/1000x600"
-    expirecookie = 5 #show it again after number of days to visitor that has not subscribed.
-    cookiename = "mycookie1" #give the cookie a unique name variable (avoid spaces and strange characters).
-    signupheader = "Join Our Newsletter"
-    showmodaltimeout = 10000 #show popover modal after time interval in milliseconds.
-    mouseleave = true #show popover when mouse leaves window: true/false.
-    modalsize = "" #lg or sm. Empty is md. If phone is detected lg is used.
-    imagedescription = "Placeholder image for this popover modal optin form"
-    signuptext = "Signup today for free and be the first to get notified on new updates."
-    inputplaceholder = "Enter your email"
-    submitbutton = "Subscribe"
-    successmessage = "Thanks for your subscription!"
-    errormessage = "Submitting form failed!"
-    optin = true #opt-in: true/false
 
 [params]
-  # bootswatch theme name, select one: cerulean, cosmo, cyborg, darkly,
-  # default, flatly, journal,  lumen, paper, readable, sandstone, simplex,
-  # slate, spacelab, superhero, united, yeti.
+    author = "Rory"
+    subtitle = "專注於Linux, CI/CD, Golang, Lean and Agile"
+    keywords = "php,golang,nodejs,murmur,小程序"
+    description = "從事程式設計工作近二十年, 陸續學習過PHP, .Net, Java, NodeJs, Go. 從 Web 到移動端再到目前專注的服務器端."
+    busuanzi = true
 
-  bootswatchtheme = "paper"
+[params.utteranc]
+    enable = true
+    repo = "roryamos/blog"    # 存储评论的Repo，格式为 owner/repo
+    issueTerm = "pathname"  #表示你选择以那种方式让github issue的评论和你的文章关联。
+    theme = "github-light" # 样式主题，有github-light和github-dark两种
 
+[menu]
 
-    # menu for changing language. This changes languages with js and stores the choice with the help
-    # of JavaScript in a Cookie. Then the path is rewritten with pathnamereplace.js. The name of the
-    # md files needs to have the same name for each language abbreviation to work correctly. Example:
-    # showcase.en.md and showcase.sv.md. It only works if DefaultContentLanguageInSubdir = true
-    switchlang = false
+    [[menu.main]]
+        identifier = "archives"
+        name = "歸檔"
+        url = "archives/"
+        weight = 3
 
-    # You can use markdown here.
-    BrandImage = "http://blog.appernetic.io/images/apperneticlogo.png" #top header brand image.
-    brand = "Appernetic blog" # brand image alt text.
-    topline = "few words about your site"
-    footline = "code with <i class='fa fa-heart'></i>"
+    [[menu.main]]
+        identifier = "about"
+        name = "關於"
+        url = "about/"
+        weight = 4
 
-    # Show a sidebar menu
-    showRightSidebar = true
+[[params.links]]
+    title = "飞雪无情的博客"
+    name = "飞雪无情的博客"
+    url = "https://www.flysnow.org"
 
-    # Text for the top menu link, which goes the root URL for the site.
-    # Default (if omitted) is "Home".
-    home = "home"
+[[params.links]]
+    title = "旅人的部落格"
+    name = "旅人的部落格"
+    url = "http://blog.udn.com/tripc/article"
 
-    mailmunchid = "" # Mailmunch site id
-    sumomeid = "" # Sumome id
-
-    # Select a syntax highight.
-    # Check the static/css/highlight directory for options.
-    highlight = "default"
-
-    # Google Analytics.
-    googleAnalytics = "Your Google Analytics tracking code"
-
-    # Sidebar social links.
-    github = "enten/hugo-boilerplate" # Your Github profile ID
-    bitbucket = "" # Your Bitbucket profile ID
-    linkedin = "" # Your LinkedIn profile ID (from public URL)
-    googleplus = "" # Your Google+ profile ID
-    facebook = "" # Your Facebook profile ID
-    twitter = "" # Your Twitter profile ID
-    youtube = ""  # Your Youtube channel ID
-    flattr = ""  # populate with your flattr uid
-
-[blackfriday]
-    angledQuotes = true
-    fractions = false
-    hrefTargetBlank = false
-    latexDashes = true
-    plainIdAnchors = true
-    extensions = []
-    extensionmask = []
-
-    # Menus
-    # If you want active menu items highlighted for internal pages don't add them here, they need to be added in each files front matter.
-    # like this:
-    #[menu]
-    #     [menu.main]
-    #        name = "Showcase"
-    #        weight = 3
-    #        identifier = "showcase"
-    # i18n menus. A menu will be added for each language to the right in the top menu. This menu will switch to the selected language. Remember to add the corresponding language in pathnamereplace.js.
-    #[[Languages.sv.menu.switchlang]]
-    #  name = "English"
-    #  identifier = ""
-    #  weight = 4
-    #  url = "en"
-
-    [Languages]
-    [Languages.en]
-    weight = 1
-    copyright = "(c) 2018 Copyright Rory blog"
-    title = "Rory Blog" # Site title
-    [[Languages.en.menu.main]]
-    name = "Blog"
-    pre = ""
-    weight = 2
-    identifier = "post"
-    url = "/post/"
-
-    [[Languages.en.menu.main]]
-    name = "About"
-    weight = 1
-    identifier = ""
-    url = "https://appernetic.io/app/#/about"
-    pre = "<i class='fa fa-road'></i>"
-
-    [[Languages.en.menu.main]]
-    name = "Dashboard"
-    identifier = ""
-    weight = 3
-    url = "https://appernetic.io/app/"
-
-    [[Languages.en.menu.footer]] # add  links to the bottom right corner.
-    name = "Disclaimer"
-    pre = "<i>&middot;</i>"
-    identifier = "disclaimer"
-    weight = 1
-    url = "/disclaimer/"
-
-    [[Languages.en.menu.footer]]
-    name = "Terms"
-    identifier = "terms"
-    weight = 2
-    url = "/terms/"
-
-[[menu.main]]
-name = "Blog"
-pre = ""
-weight = 1
-identifier = "post"
-url = "/post/"

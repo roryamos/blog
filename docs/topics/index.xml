@@ -5,10 +5,7 @@
     <link>https://roryamos.github.io/blog/topics/</link>
     <description>Recent content in Topics on Rory Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>rory.amos@gmail.com (Rory)</managingEditor>
-    <webMaster>rory.amos@gmail.com (Rory)</webMaster>
-    <copyright>(c) 2018 Copyright Rory blog</copyright>
+    <language>zh-tw</language>
     
 	<atom:link href="https://roryamos.github.io/blog/topics/index.xml" rel="self" type="application/rss+xml" />
     

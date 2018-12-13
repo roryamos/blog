@@ -5,10 +5,7 @@
     <link>https://roryamos.github.io/blog/post/</link>
     <description>Recent content in Posts on Rory Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>rory.amos@gmail.com (Rory)</managingEditor>
-    <webMaster>rory.amos@gmail.com (Rory)</webMaster>
-    <copyright>(c) 2018 Copyright Rory blog</copyright>
+    <language>zh-tw</language>
     <lastBuildDate>Wed, 12 Dec 2018 21:38:51 +0800</lastBuildDate>
     
 	<atom:link href="https://roryamos.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
@@ -18,7 +15,7 @@
       <title>First Post</title>
       <link>https://roryamos.github.io/blog/2018/12/12/first-post/</link>
       <pubDate>Wed, 12 Dec 2018 21:38:51 +0800</pubDate>
-      <author>rory.amos@gmail.com (Rory)</author>
+      
       <guid>https://roryamos.github.io/blog/2018/12/12/first-post/</guid>
       <description> Hello world </description>
     </item>
