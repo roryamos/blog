@@ -12,7 +12,7 @@ Docker 在官網上有各種平台的安裝指南 https://docs.docker.com/instal
 #### 我們介紹的是在 CentOS 下的安裝步驟 :
 #### 1. 安裝一台乾淨的CentOS 7 Minimal, ISO https://www.centos.org/download/
 #### 2. 安裝 Docker
-```bash
+```
 # yum update
 # yum install -y wget
 # wget -qO- https://get.docker.com/ | sh
@@ -28,7 +28,7 @@ adding your user to the "docker" group with something like:
 ```
 # systemctl enable docker.service
 # systemctl start docker.service
-``` 
+```
 ## Docker 的應用以 LNMP 為例
 ### Mariadb
 我們使用目前Mariadb 最新版本的docker image 10.3
