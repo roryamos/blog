@@ -7,7 +7,7 @@ tags: [Docker, LNMP, Nginx, Mariadb, PHP]
 > Docker 是一個開源專案，誕生於 2013 年初，最初是 dotCloud 公司內部的一個業餘專案。它基於 Google 公司推出的 Go 語言實作。 專案後來加入了 Linux 基金會，遵從了 Apache 2.0 協議，原始碼在 GitHub 上進行維護。
 
 ## Docker Install
-Docker 在官網上有各種平台的安裝指南 https://docs.docker.com/install/
+官網上有各種平台的安裝指南 https://docs.docker.com/install/
 
 #### 我們介紹的是在 CentOS 下的安裝步驟 :
 #### 1. 安裝一台乾淨的CentOS 7 Minimal, ISO https://www.centos.org/download/
