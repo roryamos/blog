@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Rory Blog</title>
-    <link>https://roryamos.github.io/blog/categories/</link>
+    <link>https://rory.cba.tw/categories/</link>
     <description>Recent content in Categories on Rory Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     
-	<atom:link href="https://roryamos.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rory.cba.tw/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Docker</title>
-      <link>https://roryamos.github.io/blog/categories/docker/</link>
+      <link>https://rory.cba.tw/categories/docker/</link>
       <pubDate>Wed, 12 Dec 2018 21:38:51 +0800</pubDate>
       
-      <guid>https://roryamos.github.io/blog/categories/docker/</guid>
+      <guid>https://rory.cba.tw/categories/docker/</guid>
       <description></description>
     </item>
     

@@ -3,71 +3,71 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://roryamos.github.io/blog/2018/12/12/docker-install/</loc>
+    <loc>https://rory.cba.tw/2018/12/12/docker-install/</loc>
     <lastmod>2018-12-12T21:38:51+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://roryamos.github.io/blog/categories/</loc>
+    <loc>https://rory.cba.tw/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://roryamos.github.io/blog/tags/docker/</loc>
-    <lastmod>2018-12-12T21:38:51+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://roryamos.github.io/blog/categories/docker/</loc>
+    <loc>https://rory.cba.tw/categories/docker/</loc>
     <lastmod>2018-12-12T21:38:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://roryamos.github.io/blog/tags/lnmp/</loc>
+    <loc>https://rory.cba.tw/tags/docker/</loc>
     <lastmod>2018-12-12T21:38:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://roryamos.github.io/blog/tags/mariadb/</loc>
+    <loc>https://rory.cba.tw/tags/lnmp/</loc>
     <lastmod>2018-12-12T21:38:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://roryamos.github.io/blog/tags/nginx/</loc>
+    <loc>https://rory.cba.tw/tags/mariadb/</loc>
     <lastmod>2018-12-12T21:38:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://roryamos.github.io/blog/tags/php/</loc>
+    <loc>https://rory.cba.tw/tags/nginx/</loc>
     <lastmod>2018-12-12T21:38:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://roryamos.github.io/blog/post/</loc>
+    <loc>https://rory.cba.tw/tags/php/</loc>
     <lastmod>2018-12-12T21:38:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://roryamos.github.io/blog/</loc>
+    <loc>https://rory.cba.tw/post/</loc>
     <lastmod>2018-12-12T21:38:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://roryamos.github.io/blog/tags/</loc>
+    <loc>https://rory.cba.tw/</loc>
     <lastmod>2018-12-12T21:38:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://roryamos.github.io/blog/archives/</loc>
+    <loc>https://rory.cba.tw/tags/</loc>
+    <lastmod>2018-12-12T21:38:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rory.cba.tw/archives/</loc>
   </url>
   
 </urlset>

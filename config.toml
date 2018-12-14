@@ -1,4 +1,4 @@
-baseURL = "https://roryamos.github.io/blog/"
+baseURL = "https://rory.cba.tw/"
 languageCode = "zh-tw"
 title = "Rory Blog"
 theme = "maupassant"
