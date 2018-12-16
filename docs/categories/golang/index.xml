@@ -17,7 +17,7 @@
       <pubDate>Fri, 14 Dec 2018 21:23:48 +0800</pubDate>
       
       <guid>https://twrory.com/2018/12/14/https-github-page-cloudflare/</guid>
-      <description>Hugo  hugo 是基于 Go 语言的静态网站生成器。有两种方式发布生成的静态网站文件：
+      <description>Hugo  hugo 是基于 Go 语言的静态网站生成器。
  GitHub Pages  GitHub Pages是 GitHub 提供的一種網站託管服務，用於託管GitHub用戶，用戶博客，項目文檔, 甚至整本書的靜態網頁。
 GitHub Pages於2008年底推出。與 GitHub 的其他部分一樣，它包括免費和付費的服務層。通過此服務生成的網站作為github.io的子域名託管，或作為通過第三方域名註冊商購買的自定義域名託管。
  安裝 Hugo Mac 下直接使用 homebrew

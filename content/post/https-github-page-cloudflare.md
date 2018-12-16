@@ -6,7 +6,7 @@ tags: [GitHub, Cloudflare, Hugo, HTTPS]
 ---
 
 ### Hugo
-> hugo 是基于 Go 语言的静态网站生成器。有两种方式发布生成的静态网站文件：
+> hugo 是基于 Go 语言的静态网站生成器。
 
 ### GitHub Pages
 > GitHub Pages是 GitHub 提供的一種網站託管服務，用於託管GitHub用戶，用戶博客，項目文檔, 甚至整本書的靜態網頁。  
