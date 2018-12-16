@@ -1,5 +1,5 @@
 ---
-title: "Https Github Page With Hugo"
+title: "Https Github Pages With Hugo"
 date: 2018-12-14T21:23:48+08:00
 categories: [Golang, GitHub, 架站]
 tags: [GitHub, Cloudflare, Hugo]
@@ -7,15 +7,18 @@ tags: [GitHub, Cloudflare, Hugo]
 
 ### Hugo
 > hugo 是基于 Go 语言的静态网站生成器。有两种方式发布生成的静态网站文件：
+
 ### GitHub Pages
-> GitHub Pages是 GitHub 提供的一種網站託管服務，用於託管GitHub用戶，用戶博客，項目文檔, 甚至整本書的靜態網頁。
+> GitHub Pages是 GitHub 提供的一種網站託管服務，用於託管GitHub用戶，用戶博客，項目文檔, 甚至整本書的靜態網頁。  
 > GitHub Pages於2008年底推出。與 GitHub 的其他部分一樣，它包括免費和付費的服務層。通過此服務生成的網站作為github.io的子域名託管，或作為通過第三方域名註冊商購買的自定義域名託管。
+
 ### 安裝 Hugo
 Mac 下直接使用 homebrew
 ```
 $ brew install hugo
 ```
-Windows 或其他作業系統 https://github.com/gohugoio/hugo/releases 到官方發佈頁下載. 解壓縮後將檔案 copy 到環境變數 path 裡, 以Windows 為例就是在 C:\Windows\System32. 然後到命令列下執行 :
+Windows 或其他作業系統 https://github.com/gohugoio/hugo/releases 到官方發佈頁下載.  
+解壓縮後將檔案 copy 到環境變數 path 裡, 以Windows 為例就是在 C:\Windows\System32. 然後到命令列下執行 :
 ```
 $ hugo version
 Hugo Static Site Generator v0.52 windows/amd64 BuildDate: 2018-11-28T14:07:10Z
@@ -46,7 +49,7 @@ title: "hello-world"
 \#\#\# Hello World
 ```
 #### 挑選主題
-可以到官網去挑選一個喜歡的主題 https://themes.gohugo.io/
+可以到官網去挑選一個喜歡的主題 https://themes.gohugo.io/  
 我們以 maupassant 為例
 ```
 git clone https://github.com/rujews/maupassant-hugo.git themes/maupassant
@@ -88,3 +91,6 @@ git push -u origin master
 # 配置為正確地址
 baseURL = "https://roryamos.github.io/test/"
 ```
+
+#### Custom domain
+Github Pages 允許你使用自定義域名
