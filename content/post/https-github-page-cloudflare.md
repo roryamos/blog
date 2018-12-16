@@ -2,7 +2,7 @@
 title: "Https Github Pages With Hugo"
 date: 2018-12-14T21:23:48+08:00
 categories: [Golang, GitHub, 架站]
-tags: [GitHub, Cloudflare, Hugo]
+tags: [GitHub, Cloudflare, Hugo, HTTPS]
 ---
 
 ### Hugo
@@ -93,4 +93,27 @@ baseURL = "https://roryamos.github.io/test/"
 ```
 
 #### Custom domain
-Github Pages 允許你使用自定義域名
+Github Pages 允許使用自定義域名, 但經過測試子域名是無法使用https的喔.
+如果想要使用自定義域名, 只需要在 Custom domain 欄位裡埴上自已的域名. 
+然後去DNS管理把域名 CNAME 到 github.io 對應的域名去.
+最後經過一段時間的等待後, 就可以 Enforce HTTPS 了
+
+### Cloudflare
+> Cloudflare 以向客戶提供網站安全管理、性能優化及相關的技術支持為主要業務。
+通過基於反向代理的內容分發網絡（Content Delivery Network,CDN）
+及分佈式域名解析服務（Distributed Domain Name Server），
+Cloudflare可以幫助受保護站點抵禦包括拒絕服務攻擊在內的大多數網絡攻擊，
+確保該網站長期在線，同時提升網站的性能、加載速度以改善用戶體驗。  
+> Cloudflare 也提供免費且不限流量的 CDN 及 SSL 憑證, 
+你可以輕易的讓你的域名加上https 的保護.
+
+#### 域名管理
+1. 首先要將域名 NS 配置到 Cloudflare 來做管理
+1. 打開 Cloudflare 裡的 DNS 管理
+1. 將要解析的子域名 CNAME 到 Github Pages 域名
+1. 在解析的部份有分成兩種模式, 我們選擇 (ii)
+    1. DNS only (直接將域名解析至地址)
+    2. DNS and HTTP Proxy (也就是會透過Cloudflare的CDN 節點來代理你的http流量)
+1. 打開 Crypto 管理, 在 SSL 區裡的下拉選單中選到 full
+
+經過一段時間的等待就可以生效啦, Cloudflare 還有很多像是 Firewall, Page Rules 等好用的功能可以一個一個去體驗看看.
