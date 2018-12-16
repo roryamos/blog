@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nginx on Rory Blog</title>
-    <link>https://rory.cba.tw/tags/nginx/</link>
+    <link>https://www.twrory.com/tags/nginx/</link>
     <description>Recent content in Nginx on Rory Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <lastBuildDate>Wed, 12 Dec 2018 21:38:51 +0800</lastBuildDate>
     
-	<atom:link href="https://rory.cba.tw/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.twrory.com/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Docker install </title>
-      <link>https://rory.cba.tw/2018/12/12/docker-install/</link>
+      <link>https://www.twrory.com/2018/12/12/docker-install/</link>
       <pubDate>Wed, 12 Dec 2018 21:38:51 +0800</pubDate>
       
-      <guid>https://rory.cba.tw/2018/12/12/docker-install/</guid>
+      <guid>https://www.twrory.com/2018/12/12/docker-install/</guid>
       <description>Docker 是一個開源專案，誕生於 2013 年初，最初是 dotCloud 公司內部的一個業餘專案。它基於 Google 公司推出的 Go 語言實作。 專案後來加入了 Linux 基金會，遵從了 Apache 2.0 協議，原始碼在 GitHub 上進行維護。
  Docker Install 官網上有各種平台的安裝指南 https://docs.docker.com/install/
 我們介紹的是在 CentOS 下的安裝步驟 : 1. 安裝一台乾淨的CentOS 7 Minimal, ISO https://www.centos.org/download/ 2. 安裝 Docker # yum update # yum install -y wget # wget -qO- https://get.docker.com/ | sh  在安裝完成後會出現個提示訊息說，如果你要以非root用戶來運行Docker、你需要執行下面的命令。
