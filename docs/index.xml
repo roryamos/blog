@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rory Blog</title>
-    <link>https://www.twrory.com/</link>
+    <link>https://twrory.com/</link>
     <description>Recent content on Rory Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <lastBuildDate>Fri, 14 Dec 2018 21:23:48 +0800</lastBuildDate>
     
-	<atom:link href="https://www.twrory.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://twrory.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Https Github Page With Hugo</title>
-      <link>https://www.twrory.com/2018/12/14/https-github-page-cloudflare/</link>
+      <link>https://twrory.com/2018/12/14/https-github-page-cloudflare/</link>
       <pubDate>Fri, 14 Dec 2018 21:23:48 +0800</pubDate>
       
-      <guid>https://www.twrory.com/2018/12/14/https-github-page-cloudflare/</guid>
+      <guid>https://twrory.com/2018/12/14/https-github-page-cloudflare/</guid>
       <description>Hugo  hugo 是基于 Go 语言的静态网站生成器。有两种方式发布生成的静态网站文件：
 GitHub Pages GitHub Pages是 GitHub 提供的一種網站託管服務，用於託管GitHub用戶，用戶博客，項目文檔, 甚至整本書的靜態網頁。 GitHub Pages於2008年底推出。與 GitHub 的其他部分一樣，它包括免費和付費的服務層。通過此服務生成的網站作為github.io的子域名託管，或作為通過第三方域名註冊商購買的自定義域名託管。
 安裝 Hugo Mac 下直接使用 homebrew
@@ -26,10 +26,10 @@ $ hugo version Hugo Static Site Generator v0.52 windows/amd64 BuildDate: 2018-11
     
     <item>
       <title>Docker install </title>
-      <link>https://www.twrory.com/2018/12/12/docker-install/</link>
+      <link>https://twrory.com/2018/12/12/docker-install/</link>
       <pubDate>Wed, 12 Dec 2018 21:38:51 +0800</pubDate>
       
-      <guid>https://www.twrory.com/2018/12/12/docker-install/</guid>
+      <guid>https://twrory.com/2018/12/12/docker-install/</guid>
       <description>Docker 是一個開源專案，誕生於 2013 年初，最初是 dotCloud 公司內部的一個業餘專案。它基於 Google 公司推出的 Go 語言實作。 專案後來加入了 Linux 基金會，遵從了 Apache 2.0 協議，原始碼在 GitHub 上進行維護。
  Docker Install 官網上有各種平台的安裝指南 https://docs.docker.com/install/
 我們介紹的是在 CentOS 下的安裝步驟 : 1. 安裝一台乾淨的CentOS 7 Minimal, ISO https://www.centos.org/download/ 2. 安裝 Docker # yum update # yum install -y wget # wget -qO- https://get.docker.com/ | sh  在安裝完成後會出現個提示訊息說，如果你要以非root用戶來運行Docker、你需要執行下面的命令。
@@ -38,10 +38,10 @@ If you would like to use Docker as a non-root user, you should now consider addi
     
     <item>
       <title>歸檔</title>
-      <link>https://www.twrory.com/archives/</link>
+      <link>https://twrory.com/archives/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.twrory.com/archives/</guid>
+      <guid>https://twrory.com/archives/</guid>
       <description></description>
     </item>
     

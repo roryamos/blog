@@ -3,112 +3,112 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.twrory.com/2018/12/14/https-github-page-cloudflare/</loc>
+    <loc>https://twrory.com/2018/12/14/https-github-page-cloudflare/</loc>
     <lastmod>2018-12-14T21:23:48+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.twrory.com/2018/12/12/docker-install/</loc>
+    <loc>https://twrory.com/2018/12/12/docker-install/</loc>
     <lastmod>2018-12-12T21:38:51+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.twrory.com/categories/</loc>
+    <loc>https://twrory.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.twrory.com/tags/cloudflare/</loc>
+    <loc>https://twrory.com/tags/cloudflare/</loc>
     <lastmod>2018-12-14T21:23:48+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.twrory.com/tags/docker/</loc>
-    <lastmod>2018-12-12T21:38:51+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.twrory.com/categories/docker/</loc>
+    <loc>https://twrory.com/tags/docker/</loc>
     <lastmod>2018-12-12T21:38:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.twrory.com/tags/github/</loc>
-    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.twrory.com/categories/github/</loc>
-    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.twrory.com/categories/golang/</loc>
-    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.twrory.com/tags/hugo/</loc>
-    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.twrory.com/tags/lnmp/</loc>
+    <loc>https://twrory.com/categories/docker/</loc>
     <lastmod>2018-12-12T21:38:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.twrory.com/tags/mariadb/</loc>
+    <loc>https://twrory.com/tags/github/</loc>
+    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://twrory.com/categories/github/</loc>
+    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://twrory.com/categories/golang/</loc>
+    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://twrory.com/tags/hugo/</loc>
+    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://twrory.com/tags/lnmp/</loc>
     <lastmod>2018-12-12T21:38:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.twrory.com/tags/nginx/</loc>
+    <loc>https://twrory.com/tags/mariadb/</loc>
     <lastmod>2018-12-12T21:38:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.twrory.com/tags/php/</loc>
+    <loc>https://twrory.com/tags/nginx/</loc>
     <lastmod>2018-12-12T21:38:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.twrory.com/post/</loc>
+    <loc>https://twrory.com/tags/php/</loc>
+    <lastmod>2018-12-12T21:38:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://twrory.com/post/</loc>
     <lastmod>2018-12-14T21:23:48+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.twrory.com/</loc>
+    <loc>https://twrory.com/</loc>
     <lastmod>2018-12-14T21:23:48+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.twrory.com/tags/</loc>
+    <loc>https://twrory.com/tags/</loc>
     <lastmod>2018-12-14T21:23:48+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.twrory.com/categories/%E6%9E%B6%E7%AB%99/</loc>
+    <loc>https://twrory.com/categories/%E6%9E%B6%E7%AB%99/</loc>
     <lastmod>2018-12-14T21:23:48+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.twrory.com/archives/</loc>
+    <loc>https://twrory.com/archives/</loc>
   </url>
   
 </urlset>

@@ -1,4 +1,4 @@
-baseURL = "https://www.twrory.com/"
+baseURL = "https://twrory.com/"
 languageCode = "zh-tw"
 title = "Rory Blog"
 theme = "maupassant"
