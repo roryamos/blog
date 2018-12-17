@@ -30,6 +30,8 @@ preserveTaxonomyNames = true
     keywords = "linux,docker,ci,cd,php,go,golang,nodejs,lean,agile,murmur,小程序"
     description = "從事程式設計工作近二十年, 陸續學習過PHP, .Net, Java, NodeJs, Go. 從 Web 到移動端再到目前專注的服務器端."
     busuanzi = true
+    # Google Ads
+    googleAd = "ca-pub-9397388882562141"
 
 [params.utteranc]
     enable = true
