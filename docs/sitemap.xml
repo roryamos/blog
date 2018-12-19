@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://twrory.com/2018/12/18/snippingtool-windows10/</loc>
+    <lastmod>2018-12-18T16:20:28+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://twrory.com/2018/12/14/https-github-page-with-hugo/</loc>
     <lastmod>2018-12-14T21:23:48+08:00</lastmod>
   </url>
@@ -91,19 +96,37 @@
   
   <url>
     <loc>https://twrory.com/post/</loc>
-    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
+    <lastmod>2018-12-18T16:20:28+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://twrory.com/</loc>
-    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
+    <lastmod>2018-12-18T16:20:28+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://twrory.com/tags/</loc>
     <lastmod>2018-12-14T21:23:48+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://twrory.com/tags/tools/</loc>
+    <lastmod>2018-12-18T16:20:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://twrory.com/tags/windows/</loc>
+    <lastmod>2018-12-18T16:20:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://twrory.com/categories/%E5%B0%8F%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2018-12-18T16:20:28+08:00</lastmod>
     <priority>0</priority>
   </url>
   
