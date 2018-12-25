@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Docker install  | Rory Blog</title>
-    <meta property="og:title" content="Docker install  - Rory Blog">
+    <title>Docker 安裝筆記 - 以LNMP為例的應用 | Rory Blog</title>
+    <meta property="og:title" content="Docker 安裝筆記 - 以LNMP為例的應用 - Rory Blog">
     <meta property="og:type" content="article">
         
     <meta property="article:published_time" content="2018-12-12T21:38:51&#43;08:00">
@@ -17,7 +17,7 @@
     <meta property="article:modified_time" content="2018-12-12T21:38:51&#43;08:00">
         
     <meta name="Keywords" content="linux,docker,ci,cd,php,go,golang,nodejs,lean,agile,murmur,小程序">
-    <meta name="description" content="Docker install ">
+    <meta name="description" content="Docker 安裝筆記 - 以LNMP為例的應用">
         
     <meta name="author" content="Rory">
     <meta property="og:url" content="https://twrory.com/2018/12/12/docker-install/">
@@ -80,7 +80,7 @@
                 <div class="res-cons">
                     <article class="post">
                         <header>
-                            <h1 class="post-title">Docker install </h1>
+                            <h1 class="post-title">Docker 安裝筆記 - 以LNMP為例的應用</h1>
                         </header>
                         <date class="post-meta meta-date">
                             2018年12月12日
@@ -155,10 +155,10 @@ adding your user to the &quot;docker&quot; group with something like:
 
 <p>需要配置 my.cnf 的話 -v /data/my.cnf:/etc/mysql/my.cnf</p>
 
-<pre><code># docker cp mariadb:/etc/mysql/my.cnf my.cnf
+<pre><code># docker cp mariadb:/etc/mysql/my.cnf /data/my.cnf
 # docker stop mariadb
 # docker rm mariadb
-# docker run --name mariadb -e MYSQL_ROOT_PASSWORD=passwd -v my.cnf:/etc/mysql/my.cnf -p 3306:3306 -d mariadb/server:10.3
+# docker run --name mariadb -e MYSQL_ROOT_PASSWORD=passwd -v /data/my.cnf:/etc/mysql/my.cnf -p 3306:3306 -d mariadb/server:10.3
 </code></pre>
 
 <h3 id="nginx">Nginx</h3>
@@ -286,6 +286,10 @@ adding your user to the &quot;docker&quot; group with something like:
 <ul class="widget-list">
     
     <li>
+        <a href="https://twrory.com/2018/12/19/docker-compose-with-php-laravel-dev/" title="架構一個基於Docker Compose 的 PHP Laravel 開發環境">架構一個基於Docker Compose 的 PHP Laravel 開發環境</a>
+    </li>
+    
+    <li>
         <a href="https://twrory.com/2018/12/18/snippingtool-windows10/" title="Windows10-內建好用的截屏工具">Windows10-內建好用的截屏工具</a>
     </li>
     
@@ -294,7 +298,7 @@ adding your user to the &quot;docker&quot; group with something like:
     </li>
     
     <li>
-        <a href="https://twrory.com/2018/12/12/docker-install/" title="Docker install ">Docker install </a>
+        <a href="https://twrory.com/2018/12/12/docker-install/" title="Docker 安裝筆記 - 以LNMP為例的應用">Docker 安裝筆記 - 以LNMP為例的應用</a>
     </li>
     
 </ul>
@@ -307,15 +311,19 @@ adding your user to the &quot;docker&quot; group with something like:
 <ul class="widget-list">
     
     <li>
-        <a href="https://twrory.com/categories/docker/">Docker(1)</a>
+        <a href="https://twrory.com/categories/docker/">Docker(2)</a>
     </li>
     
     <li>
-        <a href="https://twrory.com/categories/github/">GitHub(1)</a>
+        <a href="https://twrory.com/categories/github/">GitHub(2)</a>
     </li>
     
     <li>
         <a href="https://twrory.com/categories/golang/">Golang(1)</a>
+    </li>
+    
+    <li>
+        <a href="https://twrory.com/categories/php/">PHP(1)</a>
     </li>
     
     <li>
@@ -337,6 +345,8 @@ adding your user to the &quot;docker&quot; group with something like:
     
     <a href="https://twrory.com/tags/docker/">Docker</a>
     
+    <a href="https://twrory.com/tags/docker-compose/">Docker-Compose</a>
+    
     <a href="https://twrory.com/tags/github/">GitHub</a>
     
     <a href="https://twrory.com/tags/https/">HTTPS</a>
@@ -344,6 +354,8 @@ adding your user to the &quot;docker&quot; group with something like:
     <a href="https://twrory.com/tags/hugo/">Hugo</a>
     
     <a href="https://twrory.com/tags/lnmp/">LNMP</a>
+    
+    <a href="https://twrory.com/tags/laravel/">Laravel</a>
     
     <a href="https://twrory.com/tags/mariadb/">Mariadb</a>
     

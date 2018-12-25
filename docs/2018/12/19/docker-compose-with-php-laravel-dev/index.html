@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="zh-tw">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.52" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>架構一個基於Docker Compose 的 PHP Laravel 開發環境 | Rory Blog</title>
+    <meta property="og:title" content="架構一個基於Docker Compose 的 PHP Laravel 開發環境 - Rory Blog">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content="2018-12-19T14:19:38&#43;08:00">
+        
+        
+    <meta property="article:modified_time" content="2018-12-19T14:19:38&#43;08:00">
+        
+    <meta name="Keywords" content="linux,docker,ci,cd,php,go,golang,nodejs,lean,agile,murmur,小程序">
+    <meta name="description" content="架構一個基於Docker Compose 的 PHP Laravel 開發環境">
+        
+    <meta name="author" content="Rory">
+    <meta property="og:url" content="https://twrory.com/2018/12/19/docker-compose-with-php-laravel-dev/">
+    <link rel="shortcut icon" href="https://twrory.com/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://twrory.com/css/normalize.css">
+    
+        <link rel="stylesheet" href="https://twrory.com/css/prism.css">
+    
+    <link rel="stylesheet" href="https://twrory.com/css/style.css">
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+    
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-9397388882562141",
+        enable_page_level_ads: true
+    });
+    </script>
+    
+
+
+    
+    
+</head>
+
+<body>
+<header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://twrory.com/">
+                        Rory Blog
+                    </a>
+                
+                <p class="description">專注於Linux, Docker, CI/CD, Golang, Lean and Agile</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="https://twrory.com/">首页</a>
+                    
+                    <a  href="https://twrory.com/archives/" title="歸檔">歸檔</a>
+                    
+                    <a  href="https://twrory.com/about/" title="關於">關於</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div id="body">
+    <div class="container">
+        <div class="col-group">
+
+            <div class="col-8" id="main">
+                <div class="res-cons">
+                    <article class="post">
+                        <header>
+                            <h1 class="post-title">架構一個基於Docker Compose 的 PHP Laravel 開發環境</h1>
+                        </header>
+                        <date class="post-meta meta-date">
+                            2018年12月19日
+                        </date>
+                        
+                        <div class="post-meta meta-category">
+                            |
+                            
+                                <a href="https://twrory.com/categories/php">PHP</a>
+                            
+                                <a href="https://twrory.com/categories/docker">Docker</a>
+                            
+                                <a href="https://twrory.com/categories/github">GitHub</a>
+                            
+                        </div>
+                        
+                        
+                        <div class="post-meta">
+                            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span> 阅读</span></span>
+                        </div>
+                        
+                        <div class="post-content">
+                            
+
+<h3 id="docker-compose">Docker Compose</h3>
+
+<blockquote>
+<p>操作過 Docker 指令的同學們，應該都嘗試過用指令的方式管理 Docker 容器, 當需要運行的容器愈來愈多時管理的指令是又多又複雜。
+Docker Compose 是一個定義多個 Docker 容器的工具，讓我們可以使用 YAML 格式的配置文件管理多個容器，
+並幫助我們快速的佈建一套系統，提供了單一的命令，我們可以一次性的運行或停止相互依賴的容器。</p>
+</blockquote>
+
+<h4 id="安裝-docker">安裝 Docker</h4>
+
+<p>基本的安裝可以參考 <a href="https://twrory.com/2018/12/12/docker-install/">Docker 安裝筆記 - 以LNMP為例的應用</a></p>
+
+<h4 id="安裝-docker-compose">安裝 Docker Compose</h4>
+
+<p>在安裝好Docker 之後、我們可以開始安裝 Docker Compose, 首先我們需要先安裝 python-pip</p>
+
+<pre><code>sudo yum install -y epel-release
+sudo yum install -y python-pip
+</code></pre>
+
+<p>接下來就可以安裝Docker Compose了</p>
+
+<pre><code>pip install docker-compose
+</code></pre>
+
+<p>需要的話將 Python 相關的套件更新一下讓 Docker Compose 能夠順利運行</p>
+
+<pre><code>yum upgrade python*
+</code></pre>
+
+<h3 id="php-laravel">PHP Laravel</h3>
+
+<blockquote>
+<p>Laravel 是一個網頁應用框架實現了MVC的架構，運用了 Composer 這個套件相依性管理系統，提供連接許多種類的RDBMS的方式，
+提供開發語法糖使開發常見痛點的實現變的簡單，像是權限管理、路由、Sessions、及快取機制。</p>
+</blockquote>
+
+<p>接下來我們試著以安裝 Laravel 的開發環境為例，進行 Docker Compose 的配置</p>
+
+<h4 id="1-初始化我們的目錄結構">1. 初始化我們的目錄結構</h4>
+
+<pre><code>mkdir -p html log/nginx log/php mariadb nginx phpfpm var-lib-mysql
+docker pull mariadb/server:10.3
+docker run --name mariadb -e MYSQL_ROOT_PASSWORD=passwd -d mariadb/server:10.3
+docker cp mariadb:/etc/mysql/my.cnf ./mariadb/my.cnf
+docker stop mariadb
+docker rm mariadb
+
+docker pull nginx:1.15
+docker run --name nginx -v /data/html:/usr/share/nginx/html:ro -p 80:80 -d nginx:1.15
+docker cp nginx:/etc/nginx/conf.d/default.conf ./nginx/default.conf
+docker stop nginx
+docker rm nginx
+
+docker pull php:7.3-fpm
+docker run --name php-fpm -p 9000:9000 -d php:7.3-fpm
+docker cp php-fpm:/usr/local/etc/php-fpm.d/www.conf ./phpfpm/www.conf
+docker cp php-fpm:/usr/local/etc/php/php.ini-production ./phpfpm/php.ini
+docker stop php-fpm
+docker rm php-fpm
+tree .
+.
+├── docker-compose.yml
+├── html
+│   └── phpinfo.php
+├── log
+│   ├── nginx
+│   └── php
+├── mariadb
+│   └── my.cnf
+├── nginx
+│   └── default.conf
+├── phpfpm
+│   ├── php.ini
+│   └── www.conf
+└── var-lib-mysql
+
+8 directories, 6 files
+</code></pre>
+
+<h4 id="2-配置docker-compose-yml">2. 配置docker-compose.yml</h4>
+
+<p>主要是運行 Mariadb, nginx, php-fpm 這三個容器</p>
+
+<pre><code>version: '2'
+services:
+  mariadb:
+    image: mariadb/server:10.3
+    ports:
+        - &quot;3306:3306&quot;
+    volumes:
+        - &quot;./var-lib-mysql:/var/lib/mysql&quot;
+        - &quot;./mariadb/my.cnf:/etc/mysql/my.cnf&quot;
+    environment:
+        MARIADB_USER: root
+        MARIADB_ROOT_PASSWORD: root
+    restart: always
+  nginx:
+    image: nginx:1.15
+    ports:
+        - &quot;80:80&quot;
+    links:
+        - phpfpm
+    volumes:
+        - &quot;./nginx/default.conf:/etc/nginx/conf.d/default.conf&quot;
+        - &quot;./html:/var/www/html&quot;
+        - &quot;./log/nginx:/var/log/nginx&quot;
+    restart: always
+  phpfpm:
+    image: php:7.3-fpm
+    links:
+        - mariadb
+    volumes:
+        - &quot;./phpfpm/www.conf:/usr/local/etc/php-fpm.d/www.conf&quot;
+        - &quot;./phpfpm/php.ini:/usr/local/etc/php/php.ini&quot;
+        - &quot;./html:/var/www/html&quot;
+        - &quot;./log/php:/var/log/php&quot;
+    restart: always
+</code></pre>
+
+<h4 id="4-配置-nginx-default-conf">4. 配置 nginx default.conf</h4>
+
+<p>配置 Nginx HTML 的目錄, 及 php-fpm 運行的細節</p>
+
+<pre><code>server {
+    listen       80;
+    server_name  localhost;
+    location / {
+        root   /var/www/html;
+        index  index.html index.htm;
+    }
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+    location ~ \.php$ {
+        root           /var/www/html;
+        fastcgi_pass   phpfpm:9000;
+        fastcgi_index  index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+    }
+}
+</code></pre>
+
+<h4 id="5-開關服務命令">5. 開關服務命令</h4>
+
+<pre><code>docker-compose up --build -d
+docker-compose down
+</code></pre>
+
+<p>你也可以把他製作成腳本 restart.sh</p>
+
+<pre><code>#!/bin/bash
+docker-compose down
+docker-compose up --build -d
+</code></pre>
+
+<h4 id="6-用-composer-來安裝-laravel">6. 用 composer 來安裝 Laravel</h4>
+
+<p>在本地因為我們沒有PHP可以運行的環境, 我們需要 composer 來幫我們安裝 laravel</p>
+
+<pre><code>docker pull composer
+</code></pre>
+
+<p>因為我們不需要將 composer 在後台執行, 所以我們只命令製作成一個腳本來使用 composer.sh</p>
+
+<pre><code>#!/bin/sh
+export PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin
+echo &quot;Current working directory: '&quot;$(pwd)&quot;'&quot;
+docker run --rm -v $(pwd):/app -v ~/.ssh:/root/.ssh composer $@
+</code></pre>
+
+<p>接著我們安裝 Laravel</p>
+
+<pre><code>./composer.sh create-project laravel/laravel html/laravel
+</code></pre>
+
+<h4 id="7-修改-nginx-配置-來支持-laravel-運行">7. 修改 nginx 配置，來支持 laravel 運行</h4>
+
+<pre><code>server {
+    listen       80;
+    server_name  localhost;
+    root /var/www/html/laravel/public;
+    location / {
+        try_files $uri $uri/ /index.php$query_string;
+    }
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+    location ~ ^/.+\.php(/|$) {
+        fastcgi_pass   phpfpm:9000;
+        fastcgi_split_path_info ^(.+\.php)(/.*)$;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+    }
+}   
+</code></pre>
+
+<h4 id="8-hello-world">8. Hello World</h4>
+
+<p>我們編輯一下 html/laravel/routes/web.php 來讓首頁返回 Hello World 吧!</p>
+
+<pre><code>Route::get('/', function () {
+    //return view('welcome');
+    return &quot;Hello World&quot;;
+});
+</code></pre>
+
+<h3 id="laravel-開發環境快速搭建法">Laravel 開發環境快速搭建法</h3>
+
+<p>提供一個 github repository 給需要的人享用. <a href="https://github.com/roryamos/LaravelDev">https://github.com/roryamos/LaravelDev</a><br />
+只需要簡單幾個步驟，就完成了 Laravel 開發環境的建置</p>
+
+<pre><code>git clone https://github.com/roryamos/LaravelDev.git
+cd LaravelDev
+docker pull composer
+./composer.sh create-project laravel/laravel html/laravel
+vi html/laravel/routes/web.php
+./restart.sh
+</code></pre>
+
+<p>如果需要測試環境是否正常，編輯一下 html/laravel/routes/web.php</p>
+
+<pre><code>vi html/laravel/routes/web.php
+Route::get('/', function () {
+    //return view('welcome');
+    return &quot;Hello World&quot;;
+});
+</code></pre>
+
+<p>打開首頁 http://伺服器位置, 就可以看到 Hello World 了</p>
+
+                        </div>
+
+                        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="https://twrory.com/2018/12/12/docker-install/">Docker 安裝筆記 - 以LNMP為例的應用</a></li>
+        
+        <li><a href="https://twrory.com/2018/12/14/https-github-page-with-hugo/">Https Github Pages With Hugo</a></li>
+        
+        <li><a href="https://twrory.com/2018/12/18/snippingtool-windows10/">Windows10-內建好用的截屏工具</a></li>
+        
+        <li><a href="https://twrory.com/archives/">歸檔</a></li>
+        
+    </ul>
+</div>
+
+
+                        <div class="post-meta meta-tags">
+                            
+                            <ul class="clearfix">
+                                
+                                <li><a href="https://twrory.com/tags/docker">Docker</a></li>
+                                
+                                <li><a href="https://twrory.com/tags/github">GitHub</a></li>
+                                
+                                <li><a href="https://twrory.com/tags/php">PHP</a></li>
+                                
+                                <li><a href="https://twrory.com/tags/laravel">Laravel</a></li>
+                                
+                                <li><a href="https://twrory.com/tags/docker-compose">Docker-Compose</a></li>
+                                
+                            </ul>
+                            
+                        </div>
+                    </article>
+                    
+    
+
+    
+    
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "roryamos/blog"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+    
+                </div>
+            </div>
+            <div id="secondary">
+    <section class="widget">
+        <form id="search" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://twrory.com/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://twrory.com/2018/12/19/docker-compose-with-php-laravel-dev/" title="架構一個基於Docker Compose 的 PHP Laravel 開發環境">架構一個基於Docker Compose 的 PHP Laravel 開發環境</a>
+    </li>
+    
+    <li>
+        <a href="https://twrory.com/2018/12/18/snippingtool-windows10/" title="Windows10-內建好用的截屏工具">Windows10-內建好用的截屏工具</a>
+    </li>
+    
+    <li>
+        <a href="https://twrory.com/2018/12/14/https-github-page-with-hugo/" title="Https Github Pages With Hugo">Https Github Pages With Hugo</a>
+    </li>
+    
+    <li>
+        <a href="https://twrory.com/2018/12/12/docker-install/" title="Docker 安裝筆記 - 以LNMP為例的應用">Docker 安裝筆記 - 以LNMP為例的應用</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://twrory.com/categories/docker/">Docker(2)</a>
+    </li>
+    
+    <li>
+        <a href="https://twrory.com/categories/github/">GitHub(2)</a>
+    </li>
+    
+    <li>
+        <a href="https://twrory.com/categories/golang/">Golang(1)</a>
+    </li>
+    
+    <li>
+        <a href="https://twrory.com/categories/php/">PHP(1)</a>
+    </li>
+    
+    <li>
+        <a href="https://twrory.com/categories/%E5%B0%8F%E5%B7%A5%E5%85%B7/">小工具(1)</a>
+    </li>
+    
+    <li>
+        <a href="https://twrory.com/categories/%E6%9E%B6%E7%AB%99/">架站(1)</a>
+    </li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="https://twrory.com/tags/cloudflare/">Cloudflare</a>
+    
+    <a href="https://twrory.com/tags/docker/">Docker</a>
+    
+    <a href="https://twrory.com/tags/docker-compose/">Docker-Compose</a>
+    
+    <a href="https://twrory.com/tags/github/">GitHub</a>
+    
+    <a href="https://twrory.com/tags/https/">HTTPS</a>
+    
+    <a href="https://twrory.com/tags/hugo/">Hugo</a>
+    
+    <a href="https://twrory.com/tags/lnmp/">LNMP</a>
+    
+    <a href="https://twrory.com/tags/laravel/">Laravel</a>
+    
+    <a href="https://twrory.com/tags/mariadb/">Mariadb</a>
+    
+    <a href="https://twrory.com/tags/nginx/">Nginx</a>
+    
+    <a href="https://twrory.com/tags/php/">PHP</a>
+    
+    <a href="https://twrory.com/tags/tools/">Tools</a>
+    
+    <a href="https://twrory.com/tags/windows/">Windows</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://www.flysnow.org" title="飞雪无情的博客">飞雪无情的博客</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="http://blog.udn.com/tripc/article" title="旅人的部落格">旅人的部落格</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://twrory.com/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    <div class="container">
+        &copy; 2018 <a href="https://twrory.com/">Rory Blog By Rory</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="http://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+    <script type="text/javascript">
+    
+    (function(){
+        $("pre code").parent().addClass("line-numbers")
+    }())
+
+    window.MathJax = {
+        tex2jax: {
+            inlineMath: [ ['$','$'] ],
+            processEscapes: true
+        }
+    };
+    </script>
+    <script type="text/javascript" src="https://twrory.com/js/prism.js" async="true"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src="https://twrory.com/js/totop.js?v=0.0.0" async=""></script>
+
+
+
+<script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+</body>
+</html>

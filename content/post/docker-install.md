@@ -1,5 +1,5 @@
 ---
-title: "Docker install "
+title: "Docker 安裝筆記 - 以LNMP為例的應用"
 date: 2018-12-12T21:38:51+08:00
 categories: [Docker]
 tags: [Docker, LNMP, Nginx, Mariadb, PHP]
@@ -45,10 +45,10 @@ adding your user to the "docker" group with something like:
 ```
 需要配置 my.cnf 的話 -v /data/my.cnf:/etc/mysql/my.cnf
 ```
-# docker cp mariadb:/etc/mysql/my.cnf my.cnf
+# docker cp mariadb:/etc/mysql/my.cnf /data/my.cnf
 # docker stop mariadb
 # docker rm mariadb
-# docker run --name mariadb -e MYSQL_ROOT_PASSWORD=passwd -v my.cnf:/etc/mysql/my.cnf -p 3306:3306 -d mariadb/server:10.3
+# docker run --name mariadb -e MYSQL_ROOT_PASSWORD=passwd -v /data/my.cnf:/etc/mysql/my.cnf -p 3306:3306 -d mariadb/server:10.3
 ```
 ### Nginx
 ```
