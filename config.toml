@@ -12,6 +12,7 @@ paginate = 10
 paginatePath = "page"
 
 preserveTaxonomyNames = true
+googleAnalytics = "UA-131478706-1"
 
 [permalinks]
     post = "/:year/:month/:day/:filename/"
@@ -19,7 +20,7 @@ preserveTaxonomyNames = true
 
 [taxonomies]
     tag = "tags"
-                               category = "categories"
+    category = "categories"
 
 [author]
     name = "Rory"
