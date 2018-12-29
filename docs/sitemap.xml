@@ -92,6 +92,12 @@
   </url>
   
   <url>
+    <loc>https://twrory.com/tags/golang/</loc>
+    <lastmod>2006-01-02T15:04:05+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://twrory.com/tags/https/</loc>
     <lastmod>2018-12-14T21:23:48+08:00</lastmod>
     <priority>0</priority>
@@ -124,6 +130,12 @@
   <url>
     <loc>https://twrory.com/tags/nginx/</loc>
     <lastmod>2018-12-12T21:38:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://twrory.com/tags/nodejs/</loc>
+    <lastmod>2006-01-02T15:04:05+07:00</lastmod>
     <priority>0</priority>
   </url>
   
