@@ -7,20 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Https Github Pages With Hugo | Rory Blog</title>
-    <meta property="og:title" content="Https Github Pages With Hugo - Rory Blog">
+    <title>基於 Docker Compose 的 Discuz X3.4 | Rory Blog</title>
+    <meta property="og:title" content="基於 Docker Compose 的 Discuz X3.4 - Rory Blog">
     <meta property="og:type" content="article">
         
-    <meta property="article:published_time" content="2018-12-14T21:23:48&#43;08:00">
+    <meta property="article:published_time" content="2018-12-27T22:09:02&#43;08:00">
         
         
-    <meta property="article:modified_time" content="2018-12-14T21:23:48&#43;08:00">
+    <meta property="article:modified_time" content="2018-12-27T22:09:02&#43;08:00">
         
     <meta name="Keywords" content="linux,docker,ci,cd,php,go,golang,nodejs,lean,agile,murmur,小程序">
-    <meta name="description" content="Https Github Pages With Hugo">
+    <meta name="description" content="基於 Docker Compose 的 Discuz X3.4">
         
     <meta name="author" content="Rory">
-    <meta property="og:url" content="https://twrory.com/2018/12/14/https-github-page-with-hugo/">
+    <meta property="og:url" content="https://twrory.com/2018/12/27/docker-compose-with-discuz/">
     <link rel="shortcut icon" href="https://twrory.com/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="https://twrory.com/css/normalize.css">
@@ -80,20 +80,20 @@
                 <div class="res-cons">
                     <article class="post">
                         <header>
-                            <h1 class="post-title">Https Github Pages With Hugo</h1>
+                            <h1 class="post-title">基於 Docker Compose 的 Discuz X3.4</h1>
                         </header>
                         <date class="post-meta meta-date">
-                            2018年12月14日
+                            2018年12月27日
                         </date>
                         
                         <div class="post-meta meta-category">
                             |
                             
-                                <a href="https://twrory.com/categories/golang">Golang</a>
+                                <a href="https://twrory.com/categories/php">PHP</a>
+                            
+                                <a href="https://twrory.com/categories/docker">Docker</a>
                             
                                 <a href="https://twrory.com/categories/github">GitHub</a>
-                            
-                                <a href="https://twrory.com/categories/%E6%9E%B6%E7%AB%99">架站</a>
                             
                         </div>
                         
@@ -105,148 +105,106 @@
                         <div class="post-content">
                             
 
-<h3 id="hugo">Hugo</h3>
+<h3 id="discuz">Discuz</h3>
 
 <blockquote>
-<p>Hugo 是基於 Go 語言的靜態網站生成器</p>
+<p>Discuz!是個可免費下載的PHP網路論壇程式，簡稱DZ，由戴志康（Crossday）所創立，目前最新版本是Discuz! X3.4。[2]前身為Crossday Bulletin（CDB），最初改自XMBForum，爾後改寫成為現今的Discuz!社群論壇程式，由康盛創想所有（現已被騰訊收購）。現在Discuz!已成為大中華地區最多用戶使用的論壇程式。</p>
 </blockquote>
 
-<h3 id="github-pages">GitHub Pages</h3>
+<p>我們直接使用先前介紹 <a href="2018/12/19/docker-compose-with-php-laravel-dev/">架構一個基於Docker Compose 的 PHP Laravel 開發環境</a> 的整個環境<br />
+準備好 docker 及 docker compose 的環境後我們就可以開始建置 Discuz 了</p>
 
-<blockquote>
-<p>GitHub Pages是 GitHub 提供的一種網站託管服務，用於託管GitHub用戶，用戶博客，項目文檔, 甚至整本書的靜態網頁。<br />
-GitHub Pages於2008年底推出。與 GitHub 的其他部分一樣，它包括免費和付費的服務層。通過此服務生成的網站作為github.io的子域名託管，或作為通過第三方域名註冊商購買的自定義域名託管。</p>
-</blockquote>
+<pre><code>git clone https://github.com/roryamos/LaravelDev.git Discuz
+cd Discuz
+tree
+.
+├── composer.sh
+├── docker-compose.yml
+├── html
+│   ├── index.html
+│   ├── index.php
+│   └── phpinfo.php
+├── log
+│   ├── nginx
+│   └── php
+├── mariadb
+│   ├── my.cnf
+│   └── run.sh
+├── nginx
+│   ├── default.conf
+├── phpfpm
+│   ├── php.ini
+│   └── www.conf
+├── README.md
+├── restart.sh
+└── var-lib-mysql
 
-<h3 id="安裝-hugo">安裝 Hugo</h3>
-
-<p>Mac 下直接使用 homebrew</p>
-
-<pre><code>$ brew install hugo
+8 directories, 12 files
 </code></pre>
 
-<p>Windows 或其他作業系統 <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a> 到官方發佈頁下載.<br />
-解壓縮後將檔案 copy 到環境變數 path 裡, 以Windows 為例就是在 C:\Windows\System32. 然後到命令列下執行 :</p>
+<h4 id="1-clone-discuz-最新的代碼">1. clone Discuz 最新的代碼</h4>
 
-<pre><code>$ hugo version
-Hugo Static Site Generator v0.52 windows/amd64 BuildDate: 2018-11-28T14:07:10Z
+<pre><code>git clone https://gitee.com/ComsenzDiscuz/DiscuzX.git html/discuz
 </code></pre>
 
-<h4 id="生成站點">生成站點</h4>
+<h4 id="2-修改-nginx-的路徑配置">2. 修改 Nginx 的路徑配置</h4>
 
-<pre><code>$ hugo new site test
-$ tree test
-D:\DOCUMENTS\TEST
-├─archetypes //放一些template的地方, 可以客制化自已的 md template
-├─content //文章的md檔
-├─data //存放配置檔, 在生成網頁時參考
-├─layouts //存放生成html時所用的template
-├─static //存放靜態文件，在生成網頁時會一併複制過去
-└─themes //存放主題, 可以挑選喜歡的主題使用
+<pre><code>vi nginx/default.conf
+--------------------------------
+    root /var/www/html/discuz/upload;
+    location / {
+        root   /var/www/html/discuz/upload;
+        index  index.html index.htm index.php;
+    }
+--------------------------------
+./restart.sh
 </code></pre>
 
-<h4 id="創建文章">創建文章</h4>
+<p>打開網址瀏覽 <a href="http://youripaddress/">http://youripaddress/</a>, 調整安裝嚮導所提示的檔案權限.<br />
+緊接著你會看到一個問題mysqli_connect() advice_mysqli_connect<br />
+<img src="https://twrory.com/images/discuz/php-mysqli-connect-error.png" alt="Image of winrun" /></p>
 
-<pre><code>hugo new post/hello-world.md
+<h4 id="3-為-php-fpm-添加模塊">3. 為 php-fpm 添加模塊</h4>
+
+<pre><code>vi phpfpm/Dockerfile
+-------------------------------------
+FROM php:7.3-fpm
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+-------------------------------------
+vi docker-compose.yml
+-------------------------------------
+    phpfpm:
+      # image: php:7.3-fpm
+      build: phpfpm
+-------------------------------------
+./restart.sh
 </code></pre>
 
-<p>編輯 content/post/hello-world.md</p>
+<h4 id="4-ftp-service">4. ftp service</h4>
 
-<pre><code class="language-markdown">\-\-\-
-date: 2018-12-14T21:23:48+08:00
-title: &quot;hello-world&quot;
-\-\-\-
+<p>通常裝了 Discuz 後，還會需要 ftp 來協助安裝些模板模塊的, 所以我們連ftp 服務都一併搭建好<br />
+以後利用 ftp client 就可以輕鬆管理 Discuz 了</p>
 
-\#\#\# Hello World
+<pre><code>vi docker-compose.yml
+-------------------------------------
+  ftp:
+    image: bogem/ftp
+    ports:
+        - &quot;20:20&quot;
+        - &quot;21:21&quot;
+        - &quot;47400-47470:47400-47470&quot;
+    volumes:
+        - &quot;./html/discuz:/home/vsftpd&quot;
+    environment:
+        FTP_USER: ftpuser
+        FTP_PASS: ftppass
+        PASV_ADDRESS: 0.0.0.0
+    restart: always
+-------------------------------------
 </code></pre>
 
-<h4 id="挑選主題">挑選主題</h4>
-
-<p>可以到官網去挑選一個喜歡的主題 <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a><br />
-我們以 maupassant 為例</p>
-
-<pre><code>git clone https://github.com/rujews/maupassant-hugo.git themes/maupassant
-</code></pre>
-
-<p>編輯 config.toml, <a href="https://github.com/rujews/maupassant-hugo">https://github.com/rujews/maupassant-hugo</a> 的readme 有更為詳細的配置</p>
-
-<pre><code># 設置佈景主題
-theme = &quot;maupassant&quot;
-# 設置網頁發佈的目錄
-publishDir = &quot;docs&quot;
-</code></pre>
-
-<p>啟動本地運行演示</p>
-
-<pre><code>hugo server
-</code></pre>
-
-<p>發佈網站頁面</p>
-
-<pre><code>hugo
-</code></pre>
-
-<h3 id="github">Github</h3>
-
-<p>建立 github 倉庫後, 按以下命令初始化倉庫</p>
-
-<pre><code>git init
-git submodule add https://github.com/rujews/maupassant-hugo.git themes/maupassant
-git add .
-git commit -m &quot;first commit&quot;
-git remote add origin git@github.com:roryamos/test.git
-git push -u origin master
-</code></pre>
-
-<h4 id="github-pages-1">Github Pages</h4>
-
-<p>啟用倉庫的Github Page
-1. 進入食庫的Settings
-2. 在 Github Pages Source 的下拉選擇 master branch /docs folder
-3. 按下 Save
-4. 打開瀏覽器訪問 Github Pages 地址，例如: <a href="https://roryamos.github.io/test/">https://roryamos.github.io/test/</a></p>
-
-<p>因為 Hugo baseurl 沒有配置正確的地址, 所以 js css 會加載不完全.</p>
-
-<pre><code># 配置為正確地址
-baseURL = &quot;https://roryamos.github.io/test/&quot;
-</code></pre>
-
-<h4 id="custom-domain">Custom domain</h4>
-
-<p>Github Pages 允許使用自定義域名, 但經過測試子域名是無法使用https的喔.
-如果想要使用自定義域名, 只需要在 Custom domain 欄位裡埴上自已的域名.
-然後去DNS管理把域名 CNAME 到 github.io 對應的域名去.
-最後經過一段時間的等待後, 就可以 Enforce HTTPS 了</p>
-
-<h3 id="cloudflare">Cloudflare</h3>
-
-<blockquote>
-<p>Cloudflare 以向客戶提供網站安全管理、性能優化及相關的技術支持為主要業務。
-通過基於反向代理的內容分發網絡（Content Delivery Network,CDN）
-及分佈式域名解析服務（Distributed Domain Name Server），
-Cloudflare可以幫助受保護站點抵禦包括拒絕服務攻擊在內的大多數網絡攻擊，
-確保該網站長期在線，同時提升網站的性能、加載速度以改善用戶體驗。<br />
-Cloudflare 也提供免費且不限流量的 CDN 及 SSL 憑證,
-你可以輕易的讓你的域名加上https 的保護.</p>
-</blockquote>
-
-<h4 id="域名管理">域名管理</h4>
-
-<ol>
-<li>首先要將域名 NS 配置到 Cloudflare 來做管理</li>
-<li>打開 Cloudflare 裡的 DNS 管理</li>
-<li>將要解析的子域名 CNAME 到 Github Pages 域名</li>
-<li>在解析的部份有分成兩種模式, 我們選擇 (ii)
-
-<ol>
-<li>DNS only (直接將域名解析至地址)</li>
-<li>DNS and HTTP Proxy (也就是會透過Cloudflare的CDN 節點來代理你的http流量)</li>
-</ol></li>
-<li>打開 Crypto 管理, 在 SSL 區裡的下拉選單中選到 full</li>
-</ol>
-
-<p>經過一段時間的等待就可以生效啦, Cloudflare 還有很多像是 Firewall, Page Rules 等好用的功能可以一個一個去體驗看看.</p>
+<p>最後，我們照舊提供一個懶人包給看到最後的觀眾朋友們享用.
+<a href="https://github.com/roryamos/DockerDiscuz">https://github.com/roryamos/DockerDiscuz</a></p>
 
                         </div>
 
@@ -256,7 +214,13 @@ Cloudflare 也提供免費且不限流量的 CDN 及 SSL 憑證,
     <h2>See Also</h2>
     <ul class="listing">
         
+        <li><a href="https://twrory.com/2018/12/19/docker-compose-with-php-laravel-dev/">架構一個基於Docker Compose 的 PHP Laravel 開發環境</a></li>
+        
         <li><a href="https://twrory.com/2018/12/12/docker-install/">Docker 安裝筆記 - 以LNMP為例的應用</a></li>
+        
+        <li><a href="https://twrory.com/2018/12/14/https-github-page-with-hugo/">Https Github Pages With Hugo</a></li>
+        
+        <li><a href="https://twrory.com/2018/12/18/snippingtool-windows10/">Windows10-內建好用的截屏工具</a></li>
         
         <li><a href="https://twrory.com/archives/">歸檔</a></li>
         
@@ -268,13 +232,17 @@ Cloudflare 也提供免費且不限流量的 CDN 及 SSL 憑證,
                             
                             <ul class="clearfix">
                                 
+                                <li><a href="https://twrory.com/tags/docker">Docker</a></li>
+                                
                                 <li><a href="https://twrory.com/tags/github">GitHub</a></li>
                                 
-                                <li><a href="https://twrory.com/tags/cloudflare">Cloudflare</a></li>
+                                <li><a href="https://twrory.com/tags/php">PHP</a></li>
                                 
-                                <li><a href="https://twrory.com/tags/hugo">Hugo</a></li>
+                                <li><a href="https://twrory.com/tags/ftp">FTP</a></li>
                                 
-                                <li><a href="https://twrory.com/tags/https">HTTPS</a></li>
+                                <li><a href="https://twrory.com/tags/discuz">Discuz</a></li>
+                                
+                                <li><a href="https://twrory.com/tags/docker-compose">Docker-Compose</a></li>
                                 
                             </ul>
                             

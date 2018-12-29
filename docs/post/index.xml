@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Rory Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 19 Dec 2018 14:19:38 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 27 Dec 2018 22:09:02 +0800</lastBuildDate>
     
 	<atom:link href="https://twrory.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>基於 Docker Compose 的 Discuz X3.4</title>
+      <link>https://twrory.com/2018/12/27/docker-compose-with-discuz/</link>
+      <pubDate>Thu, 27 Dec 2018 22:09:02 +0800</pubDate>
+      
+      <guid>https://twrory.com/2018/12/27/docker-compose-with-discuz/</guid>
+      <description>Discuz  Discuz!是個可免費下載的PHP網路論壇程式，簡稱DZ，由戴志康（Crossday）所創立，目前最新版本是Discuz! X3.4。[2]前身為Crossday Bulletin（CDB），最初改自XMBForum，爾後改寫成為現今的Discuz!社群論壇程式，由康盛創想所有（現已被騰訊收購）。現在Discuz!已成為大中華地區最多用戶使用的論壇程式。
+ 我們直接使用先前介紹 架構一個基於Docker Compose 的 PHP Laravel 開發環境 的整個環境
+準備好 docker 及 docker compose 的環境後我們就可以開始建置 Discuz 了
+git clone https://github.com/roryamos/LaravelDev.git Discuz cd Discuz tree . ├── composer.sh ├── docker-compose.yml ├── html │ ├── index.html │ ├── index.php │ └── phpinfo.php ├── log │ ├── nginx │ └── php ├── mariadb │ ├── my.cnf │ └── run.sh ├── nginx │ ├── default.conf ├── phpfpm │ ├── php.</description>
+    </item>
     
     <item>
       <title>架構一個基於Docker Compose 的 PHP Laravel 開發環境</title>
