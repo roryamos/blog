@@ -50,13 +50,13 @@
   </url>
   
   <url>
-    <loc>https://twrory.com/categories/docker/</loc>
+    <loc>https://twrory.com/tags/docker/</loc>
     <lastmod>2018-12-27T22:09:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://twrory.com/tags/docker/</loc>
+    <loc>https://twrory.com/categories/docker/</loc>
     <lastmod>2018-12-27T22:09:02+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -74,26 +74,26 @@
   </url>
   
   <url>
-    <loc>https://twrory.com/categories/github/</loc>
-    <lastmod>2018-12-27T22:09:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://twrory.com/tags/github/</loc>
     <lastmod>2018-12-27T22:09:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://twrory.com/categories/golang/</loc>
-    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
+    <loc>https://twrory.com/categories/github/</loc>
+    <lastmod>2018-12-27T22:09:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://twrory.com/tags/golang/</loc>
     <lastmod>2006-01-02T15:04:05+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://twrory.com/categories/golang/</loc>
+    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -140,13 +140,13 @@
   </url>
   
   <url>
-    <loc>https://twrory.com/categories/php/</loc>
+    <loc>https://twrory.com/tags/php/</loc>
     <lastmod>2018-12-27T22:09:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://twrory.com/tags/php/</loc>
+    <loc>https://twrory.com/categories/php/</loc>
     <lastmod>2018-12-27T22:09:02+08:00</lastmod>
     <priority>0</priority>
   </url>
