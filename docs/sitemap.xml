@@ -1,200 +1,106 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://twrory.com/2018/12/27/docker-compose-with-discuz/</loc>
-    <lastmod>2018-12-27T22:09:02+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://twrory.com/2018/12/19/docker-compose-with-php-laravel-dev/</loc>
-    <lastmod>2018-12-19T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://twrory.com/2018/12/18/snippingtool-windows10/</loc>
-    <lastmod>2018-12-18T16:20:28+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://twrory.com/2018/12/14/https-github-page-with-hugo/</loc>
-    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://twrory.com/2018/12/12/docker-install/</loc>
-    <lastmod>2018-12-12T21:38:51+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://twrory.com/about/</loc>
-    <lastmod>2006-01-02T15:04:05+07:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://twrory.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://twrory.com/tags/cloudflare/</loc>
-    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+    <lastmod>2018-12-27T22:09:02+08:00</lastmod>
+  </url><url>
     <loc>https://twrory.com/tags/discuz/</loc>
     <lastmod>2018-12-27T22:09:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://twrory.com/tags/docker/</loc>
     <lastmod>2018-12-27T22:09:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://twrory.com/categories/docker/</loc>
     <lastmod>2018-12-27T22:09:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://twrory.com/tags/docker-compose/</loc>
     <lastmod>2018-12-27T22:09:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://twrory.com/tags/ftp/</loc>
     <lastmod>2018-12-27T22:09:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://twrory.com/tags/github/</loc>
     <lastmod>2018-12-27T22:09:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://twrory.com/categories/github/</loc>
     <lastmod>2018-12-27T22:09:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://twrory.com/tags/golang/</loc>
-    <lastmod>2006-01-02T15:04:05+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://twrory.com/categories/golang/</loc>
-    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://twrory.com/tags/https/</loc>
-    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://twrory.com/tags/hugo/</loc>
-    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://twrory.com/tags/lnmp/</loc>
-    <lastmod>2018-12-12T21:38:51+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://twrory.com/tags/laravel/</loc>
-    <lastmod>2018-12-19T14:19:38+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://twrory.com/tags/mariadb/</loc>
-    <lastmod>2018-12-12T21:38:51+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://twrory.com/tags/nginx/</loc>
-    <lastmod>2018-12-12T21:38:51+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://twrory.com/tags/nodejs/</loc>
-    <lastmod>2006-01-02T15:04:05+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://twrory.com/tags/php/</loc>
     <lastmod>2018-12-27T22:09:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://twrory.com/categories/php/</loc>
     <lastmod>2018-12-27T22:09:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://twrory.com/post/</loc>
     <lastmod>2018-12-27T22:09:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://twrory.com/</loc>
     <lastmod>2018-12-27T22:09:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://twrory.com/tags/</loc>
-    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+    <lastmod>2018-12-27T22:09:02+08:00</lastmod>
+  </url><url>
+    <loc>https://twrory.com/2018/12/27/docker-compose-with-discuz/</loc>
+    <lastmod>2018-12-27T22:09:02+08:00</lastmod>
+  </url><url>
+    <loc>https://twrory.com/tags/laravel/</loc>
+    <lastmod>2018-12-19T14:19:38+08:00</lastmod>
+  </url><url>
+    <loc>https://twrory.com/2018/12/19/docker-compose-with-php-laravel-dev/</loc>
+    <lastmod>2018-12-19T14:19:38+08:00</lastmod>
+  </url><url>
     <loc>https://twrory.com/tags/tools/</loc>
     <lastmod>2018-12-18T16:20:28+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://twrory.com/tags/windows/</loc>
     <lastmod>2018-12-18T16:20:28+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://twrory.com/2018/12/18/snippingtool-windows10/</loc>
+    <lastmod>2018-12-18T16:20:28+08:00</lastmod>
+  </url><url>
     <loc>https://twrory.com/categories/%E5%B0%8F%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2018-12-18T16:20:28+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://twrory.com/tags/cloudflare/</loc>
+    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
+  </url><url>
+    <loc>https://twrory.com/categories/golang/</loc>
+    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
+  </url><url>
+    <loc>https://twrory.com/tags/https/</loc>
+    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
+  </url><url>
+    <loc>https://twrory.com/2018/12/14/https-github-page-with-hugo/</loc>
+    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
+  </url><url>
+    <loc>https://twrory.com/tags/hugo/</loc>
+    <lastmod>2018-12-14T21:23:48+08:00</lastmod>
+  </url><url>
     <loc>https://twrory.com/categories/%E6%9E%B6%E7%AB%99/</loc>
     <lastmod>2018-12-14T21:23:48+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://twrory.com/2018/12/12/docker-install/</loc>
+    <lastmod>2018-12-12T21:38:51+08:00</lastmod>
+  </url><url>
+    <loc>https://twrory.com/tags/lnmp/</loc>
+    <lastmod>2018-12-12T21:38:51+08:00</lastmod>
+  </url><url>
+    <loc>https://twrory.com/tags/mariadb/</loc>
+    <lastmod>2018-12-12T21:38:51+08:00</lastmod>
+  </url><url>
+    <loc>https://twrory.com/tags/nginx/</loc>
+    <lastmod>2018-12-12T21:38:51+08:00</lastmod>
+  </url><url>
+    <loc>https://twrory.com/tags/golang/</loc>
+    <lastmod>2006-01-02T15:04:05+07:00</lastmod>
+  </url><url>
+    <loc>https://twrory.com/tags/nodejs/</loc>
+    <lastmod>2006-01-02T15:04:05+07:00</lastmod>
+  </url><url>
+    <loc>https://twrory.com/about/</loc>
+    <lastmod>2006-01-02T15:04:05+07:00</lastmod>
+  </url><url>
     <loc>https://twrory.com/archives/</loc>
   </url>
-  
 </urlset>

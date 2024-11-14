@@ -1,168 +1,131 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Rory Blog</title>
     <link>https://twrory.com/tags/</link>
     <description>Recent content in Tags on Rory Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 14 Dec 2018 21:23:48 +0800</lastBuildDate>
-    
-	<atom:link href="https://twrory.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Cloudflare</title>
-      <link>https://twrory.com/tags/cloudflare/</link>
-      <pubDate>Fri, 14 Dec 2018 21:23:48 +0800</pubDate>
-      
-      <guid>https://twrory.com/tags/cloudflare/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Thu, 27 Dec 2018 22:09:02 +0800</lastBuildDate>
+    <atom:link href="https://twrory.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Discuz</title>
       <link>https://twrory.com/tags/discuz/</link>
       <pubDate>Thu, 27 Dec 2018 22:09:02 +0800</pubDate>
-      
       <guid>https://twrory.com/tags/discuz/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Docker</title>
       <link>https://twrory.com/tags/docker/</link>
       <pubDate>Thu, 27 Dec 2018 22:09:02 +0800</pubDate>
-      
       <guid>https://twrory.com/tags/docker/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Docker-Compose</title>
       <link>https://twrory.com/tags/docker-compose/</link>
       <pubDate>Thu, 27 Dec 2018 22:09:02 +0800</pubDate>
-      
       <guid>https://twrory.com/tags/docker-compose/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>FTP</title>
       <link>https://twrory.com/tags/ftp/</link>
       <pubDate>Thu, 27 Dec 2018 22:09:02 +0800</pubDate>
-      
       <guid>https://twrory.com/tags/ftp/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>GitHub</title>
       <link>https://twrory.com/tags/github/</link>
       <pubDate>Thu, 27 Dec 2018 22:09:02 +0800</pubDate>
-      
       <guid>https://twrory.com/tags/github/</guid>
       <description></description>
     </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>https://twrory.com/tags/golang/</link>
-      <pubDate>Mon, 02 Jan 2006 15:04:05 +0700</pubDate>
-      
-      <guid>https://twrory.com/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>HTTPS</title>
-      <link>https://twrory.com/tags/https/</link>
-      <pubDate>Fri, 14 Dec 2018 21:23:48 +0800</pubDate>
-      
-      <guid>https://twrory.com/tags/https/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://twrory.com/tags/hugo/</link>
-      <pubDate>Fri, 14 Dec 2018 21:23:48 +0800</pubDate>
-      
-      <guid>https://twrory.com/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>LNMP</title>
-      <link>https://twrory.com/tags/lnmp/</link>
-      <pubDate>Wed, 12 Dec 2018 21:38:51 +0800</pubDate>
-      
-      <guid>https://twrory.com/tags/lnmp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Laravel</title>
-      <link>https://twrory.com/tags/laravel/</link>
-      <pubDate>Wed, 19 Dec 2018 14:19:38 +0800</pubDate>
-      
-      <guid>https://twrory.com/tags/laravel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mariadb</title>
-      <link>https://twrory.com/tags/mariadb/</link>
-      <pubDate>Wed, 12 Dec 2018 21:38:51 +0800</pubDate>
-      
-      <guid>https://twrory.com/tags/mariadb/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nginx</title>
-      <link>https://twrory.com/tags/nginx/</link>
-      <pubDate>Wed, 12 Dec 2018 21:38:51 +0800</pubDate>
-      
-      <guid>https://twrory.com/tags/nginx/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>NodeJs</title>
-      <link>https://twrory.com/tags/nodejs/</link>
-      <pubDate>Mon, 02 Jan 2006 15:04:05 +0700</pubDate>
-      
-      <guid>https://twrory.com/tags/nodejs/</guid>
-      <description></description>
-    </item>
-    
     <item>
       <title>PHP</title>
       <link>https://twrory.com/tags/php/</link>
       <pubDate>Thu, 27 Dec 2018 22:09:02 +0800</pubDate>
-      
       <guid>https://twrory.com/tags/php/</guid>
       <description></description>
     </item>
-    
+    <item>
+      <title>Laravel</title>
+      <link>https://twrory.com/tags/laravel/</link>
+      <pubDate>Wed, 19 Dec 2018 14:19:38 +0800</pubDate>
+      <guid>https://twrory.com/tags/laravel/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Tools</title>
       <link>https://twrory.com/tags/tools/</link>
       <pubDate>Tue, 18 Dec 2018 16:20:28 +0800</pubDate>
-      
       <guid>https://twrory.com/tags/tools/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Windows</title>
       <link>https://twrory.com/tags/windows/</link>
       <pubDate>Tue, 18 Dec 2018 16:20:28 +0800</pubDate>
-      
       <guid>https://twrory.com/tags/windows/</guid>
       <description></description>
     </item>
-    
+    <item>
+      <title>Cloudflare</title>
+      <link>https://twrory.com/tags/cloudflare/</link>
+      <pubDate>Fri, 14 Dec 2018 21:23:48 +0800</pubDate>
+      <guid>https://twrory.com/tags/cloudflare/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HTTPS</title>
+      <link>https://twrory.com/tags/https/</link>
+      <pubDate>Fri, 14 Dec 2018 21:23:48 +0800</pubDate>
+      <guid>https://twrory.com/tags/https/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>https://twrory.com/tags/hugo/</link>
+      <pubDate>Fri, 14 Dec 2018 21:23:48 +0800</pubDate>
+      <guid>https://twrory.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LNMP</title>
+      <link>https://twrory.com/tags/lnmp/</link>
+      <pubDate>Wed, 12 Dec 2018 21:38:51 +0800</pubDate>
+      <guid>https://twrory.com/tags/lnmp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mariadb</title>
+      <link>https://twrory.com/tags/mariadb/</link>
+      <pubDate>Wed, 12 Dec 2018 21:38:51 +0800</pubDate>
+      <guid>https://twrory.com/tags/mariadb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nginx</title>
+      <link>https://twrory.com/tags/nginx/</link>
+      <pubDate>Wed, 12 Dec 2018 21:38:51 +0800</pubDate>
+      <guid>https://twrory.com/tags/nginx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Golang</title>
+      <link>https://twrory.com/tags/golang/</link>
+      <pubDate>Mon, 02 Jan 2006 15:04:05 +0700</pubDate>
+      <guid>https://twrory.com/tags/golang/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NodeJs</title>
+      <link>https://twrory.com/tags/nodejs/</link>
+      <pubDate>Mon, 02 Jan 2006 15:04:05 +0700</pubDate>
+      <guid>https://twrory.com/tags/nodejs/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

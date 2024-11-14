@@ -1,30 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on Rory Blog</title>
     <link>https://twrory.com/tags/hugo/</link>
     <description>Recent content in Hugo on Rory Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-tw</language>
     <lastBuildDate>Fri, 14 Dec 2018 21:23:48 +0800</lastBuildDate>
-    
-	<atom:link href="https://twrory.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://twrory.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Https Github Pages With Hugo</title>
       <link>https://twrory.com/2018/12/14/https-github-page-with-hugo/</link>
       <pubDate>Fri, 14 Dec 2018 21:23:48 +0800</pubDate>
-      
       <guid>https://twrory.com/2018/12/14/https-github-page-with-hugo/</guid>
-      <description>Hugo  Hugo 是基於 Go 語言的靜態網站生成器
- GitHub Pages  GitHub Pages是 GitHub 提供的一種網站託管服務，用於託管GitHub用戶，用戶博客，項目文檔, 甚至整本書的靜態網頁。
-GitHub Pages於2008年底推出。與 GitHub 的其他部分一樣，它包括免費和付費的服務層。通過此服務生成的網站作為github.io的子域名託管，或作為通過第三方域名註冊商購買的自定義域名託管。
- 安裝 Hugo Mac 下直接使用 homebrew
-$ brew install hugo  Windows 或其他作業系統 https://github.com/gohugoio/hugo/releases 到官方發佈頁下載.
-解壓縮後將檔案 copy 到環境變數 path 裡, 以Windows 為例就是在 C:\Windows\System32. 然後到命令列下執行 :
-$ hugo version Hugo Static Site Generator v0.52 windows/amd64 BuildDate: 2018-11-28T14:07:10Z  生成站點 $ hugo new site test $ tree test D:\DOCUMENTS\TEST ├─archetypes //放一些template的地方, 可以客制化自已的 md template ├─content //文章的md檔 ├─data //存放配置檔, 在生成網頁時參考 ├─layouts //存放生成html時所用的template ├─static //存放靜態文件，在生成網頁時會一併複制過去 └─themes //存放主題, 可以挑選喜歡的主題使用  創建文章 hugo new post/hello-world.</description>
+      <description>&lt;h3 id=&#34;hugo&#34;&gt;Hugo&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Hugo 是基於 Go 語言的靜態網站生成器&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;github-pages&#34;&gt;GitHub Pages&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;GitHub Pages是 GitHub 提供的一種網站託管服務，用於託管GitHub用戶，用戶博客，項目文檔, 甚至整本書的靜態網頁。&lt;br&gt;&#xA;GitHub Pages於2008年底推出。與 GitHub 的其他部分一樣，它包括免費和付費的服務層。通過此服務生成的網站作為github.io的子域名託管，或作為通過第三方域名註冊商購買的自定義域名託管。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;安裝-hugo&#34;&gt;安裝 Hugo&lt;/h3&gt;&#xA;&lt;p&gt;Mac 下直接使用 homebrew&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ brew install hugo&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Windows 或其他作業系統 &lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;https://github.com/gohugoio/hugo/releases&lt;/a&gt; 到官方發佈頁下載.&lt;br&gt;&#xA;解壓縮後將檔案 copy 到環境變數 path 裡, 以Windows 為例就是在 C:\Windows\System32. 然後到命令列下執行 :&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ hugo version&#xA;Hugo Static Site Generator v0.52 windows/amd64 BuildDate: 2018-11-28T14:07:10Z&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;生成站點&#34;&gt;生成站點&lt;/h4&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ hugo new site test&#xA;$ tree test&#xA;D:\DOCUMENTS\TEST&#xA;├─archetypes //放一些template的地方, 可以客制化自已的 md template&#xA;├─content //文章的md檔&#xA;├─data //存放配置檔, 在生成網頁時參考&#xA;├─layouts //存放生成html時所用的template&#xA;├─static //存放靜態文件，在生成網頁時會一併複制過去&#xA;└─themes //存放主題, 可以挑選喜歡的主題使用&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;創建文章&#34;&gt;創建文章&lt;/h4&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hugo new post/hello-world.md&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;編輯 content/post/hello-world.md&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

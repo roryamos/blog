@@ -1,30 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows on Rory Blog</title>
     <link>https://twrory.com/tags/windows/</link>
     <description>Recent content in Windows on Rory Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-tw</language>
     <lastBuildDate>Tue, 18 Dec 2018 16:20:28 +0800</lastBuildDate>
-    
-	<atom:link href="https://twrory.com/tags/windows/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://twrory.com/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows10-內建好用的截屏工具</title>
       <link>https://twrory.com/2018/12/18/snippingtool-windows10/</link>
       <pubDate>Tue, 18 Dec 2018 16:20:28 +0800</pubDate>
-      
       <guid>https://twrory.com/2018/12/18/snippingtool-windows10/</guid>
-      <description>前言  在這個網路通訊時代，大家幾乎都依賴著即時通訊軟體來取代電話。無論是辦公、打屁、交友、遊戲在在都離不開即時通訊。 尤其是在辦公或著其他場景下你需要仰賴截圖來說明一些什麼的時候，感覺這個科技的進步實在是太美好了。 甚至是在做報告的時候也難免需要截屏來說明；相信有許多人跟我一樣，都是打開了Line 來做截屏然後複制到報告裡。
- Snippingtool 這是一個內建在Win10 裡的軟體、應該打從Win7 就有了，Win7 的用戶不妨試試看，它能夠很好的幫助你截取螢幕畫面，我們按照以下步驟來打開這個軟體。
-1. Win+R 鍵開啟執行窗格並輸入 Snippingtool
-2. 按下確定
-3. 預設開啟應用程式的時候就會要你選定剪取畫面，這邊我們按一下Esc 取消
-4. 將剪取工具釘選在工具列上
-5. 接下來只需要點擊剪取工具的圖標就可以開始剪取了、是不是很方便呀。</description>
+      <description>&lt;h3 id=&#34;前言&#34;&gt;前言&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;在這個網路通訊時代，大家幾乎都依賴著即時通訊軟體來取代電話。無論是辦公、打屁、交友、遊戲在在都離不開即時通訊。&#xA;尤其是在辦公或著其他場景下你需要仰賴截圖來說明一些什麼的時候，感覺這個科技的進步實在是太美好了。&#xA;甚至是在做報告的時候也難免需要截屏來說明；相信有許多人跟我一樣，都是打開了Line 來做截屏然後複制到報告裡。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h4 id=&#34;snippingtool&#34;&gt;Snippingtool&lt;/h4&gt;&#xA;&lt;p&gt;這是一個內建在Win10 裡的軟體、應該打從Win7 就有了，Win7 的用戶不妨試試看，它能夠很好的幫助你截取螢幕畫面，我們按照以下步驟來打開這個軟體。&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Win+R 鍵開啟執行窗格並輸入 Snippingtool&lt;br&gt;&#xA;&lt;img src=&#34;https://twrory.com/images/snippingtool-windows10/winrun-snippingtool.png&#34; alt=&#34;Image of winrun&#34;&gt;&lt;/li&gt;&#xA;&lt;li&gt;按下確定&lt;/li&gt;&#xA;&lt;li&gt;預設開啟應用程式的時候就會要你選定剪取畫面，這邊我們按一下Esc 取消&lt;/li&gt;&#xA;&lt;li&gt;將剪取工具釘選在工具列上&lt;br&gt;&#xA;&lt;img src=&#34;https://twrory.com/images/snippingtool-windows10/fixed-in-toolbar.png&#34; alt=&#34;Image of fixed&#34;&gt;&lt;/li&gt;&#xA;&lt;li&gt;接下來只需要點擊剪取工具的圖標就可以開始剪取了、是不是很方便呀。&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
-    
   </channel>
 </rss>

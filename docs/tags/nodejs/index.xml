@@ -1,26 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NodeJs on Rory Blog</title>
     <link>https://twrory.com/tags/nodejs/</link>
     <description>Recent content in NodeJs on Rory Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-tw</language>
     <lastBuildDate>Mon, 02 Jan 2006 15:04:05 +0700</lastBuildDate>
-    
-	<atom:link href="https://twrory.com/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://twrory.com/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>關於我</title>
       <link>https://twrory.com/about/</link>
       <pubDate>Mon, 02 Jan 2006 15:04:05 +0700</pubDate>
-      
       <guid>https://twrory.com/about/</guid>
-      <description>Rory 從事程式設計工作近二十年, 陸續學習過PHP, .Net, Java, NodeJs, Go. 從 Web 到移動端再到目前專注的服務器端.
-Follow @roryamos 
-如果覺得有什麼項目不錯的，歡迎給星.</description>
+      <description>&lt;h3 id=&#34;rory&#34;&gt;Rory&lt;/h3&gt;&#xA;&lt;p&gt;從事程式設計工作近二十年, 陸續學習過PHP, .Net, Java, NodeJs, Go. 從 Web 到移動端再到目前專注的服務器端.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Follow @roryamos&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;如果覺得有什麼項目不錯的，歡迎給星.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
