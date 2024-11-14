@@ -3,9 +3,11 @@
 <head>
 
     <meta charset="utf-8">
-    <meta name="generator" content="Hugo 0.52" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
 
     <title>Mariadb | Rory Blog</title>
     <meta property="og:title" content="Mariadb - Rory Blog">
@@ -15,34 +17,31 @@
     <meta name="Keywords" content="linux,docker,ci,cd,php,go,golang,nodejs,lean,agile,murmur,小程序">
     <meta name="description" content="Mariadb">
         
-    <meta name="author" content="Rory">
+    <meta name="author" content="">
     <meta property="og:url" content="https://twrory.com/tags/mariadb/">
-    <link rel="shortcut icon" href="https://twrory.com/favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" href="https://twrory.com/css/normalize.css">
-    
-    <link rel="stylesheet" href="https://twrory.com/css/style.css">
-    <link rel="alternate" type="application/rss+xml+xml" href="https://twrory.com/tags/mariadb/index.xml" title="Rory Blog" />
-    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-
-    
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-9397388882562141",
-        enable_page_level_ads: true
-    });
-    </script>
+    <link rel="shortcut icon" href='https://twrory.com/favicon.ico' type="image/x-icon">
+    <link rel="icon" href='https://twrory.com/favicon.png' type="image/png">
+    <link rel="alternate icon" href='https://twrory.com/favicon.png' type="image/svg+xml">
     
 
+    <link rel="stylesheet" href='https://twrory.com/css/normalize.css'>
+    <link rel="stylesheet" href='https://twrory.com/css/style.css'>
+    <link rel="alternate" type="application/rss+xml" href="https://twrory.com/tags/mariadb/index.xml" title="Rory Blog" />
+    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    
+    <script data-ad-client="ca-pub-9397388882562141" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    
+    
+    
     
     
 </head>
 
 
 <body>
-<header id="header" class="clearfix">
+    <header id="header" class="clearfix">
     <div class="container">
         <div class="col-group">
             <div class="site-name ">
@@ -55,7 +54,7 @@
             </div>
             <div>
                 <nav id="nav-menu" class="clearfix">
-                    <a class="" href="https://twrory.com/">首页</a>
+                    <a class="" href="https://twrory.com/">Home</a>
                     
                     <a  href="https://twrory.com/archives/" title="歸檔">歸檔</a>
                     
@@ -67,90 +66,154 @@
     </div>
 </header>
 
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
 
-<div id="body">
-    <div class="container">
-        <div class="col-group">
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    
+    <h3 class="archive-title">
+        包含标签
+        <span class="keyword">Mariadb</span>
+        articles
+    </h3>
+    
 
-            <div class="col-8" id="main">
-                <div class="res-cons">
-                    
-                    <h3 class="archive-title">
-                        包含标签
-                        <span class="keyword">Mariadb</span>
-                        的文章
-                    </h3>
-                    
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https://twrory.com/2018/12/12/docker-install/" target="_blank">Docker 安裝筆記 - 以LNMP為例的應用</a>
+            </h1>
+        </header>
+        
+  <time datetime="2018-12-12T13:38:51Z" class="post-meta meta-date dt-published">
+    2018-12-12
+  </time>
 
-                    
-                        <article class="post">
-                            <header>
-                                <h1 class="post-title">
-                                    <a href="https://twrory.com/2018/12/12/docker-install/">Docker 安裝筆記 - 以LNMP為例的應用</a>
-                                </h1>
-                            </header>
-                            <date class="post-meta meta-date">
-                                2018年12月12日
-                            </date>
-                            
-                            <div class="post-meta meta-category">
-                                |
-                                
-                                    <a href="https://twrory.com/categories/docker">Docker</a>
-                                
-                            </div>
-                            
-                            <div class="post-content">
-                                <blockquote>
+
+<div class="post-meta meta-category">
+  <span>&nbsp;|</span>
+  
+    <a href='https://twrory.com/categories/docker' target="_blank">Docker</a>
+  
+</div>
+
+
+        <div class="post-content">
+            <blockquote>
 <p>Docker 是一個開源專案，誕生於 2013 年初，最初是 dotCloud 公司內部的一個業餘專案。它基於 Google 公司推出的 Go 語言實作。 專案後來加入了 Linux 基金會，遵從了 Apache 2.0 協議，原始碼在 GitHub 上進行維護。</p>
 </blockquote>
+<h2 id="docker-install">Docker Install</h2>
+<p>官網上有各種平台的安裝指南 <a href="https://docs.docker.com/install/">https://docs.docker.com/install/</a></p>
+<h4 id="我們介紹的是在-centos-下的安裝步驟-">我們介紹的是在 CentOS 下的安裝步驟 :</h4>
+<h4 id="1-安裝一台乾淨的centos-7-minimal-iso-httpswwwcentosorgdownload">1. 安裝一台乾淨的CentOS 7 Minimal, ISO <a href="https://www.centos.org/download/">https://www.centos.org/download/</a></h4>
+<h4 id="2-安裝-docker">2. 安裝 Docker</h4>
+<pre tabindex="0"><code># yum update
+# yum install -y wget
+# wget -qO- https://get.docker.com/ | sh
+</code></pre><p>在安裝完成後會出現個提示訊息說，如果你要以非root用戶來運行Docker、你需要執行下面的命令。</p>
+<pre tabindex="0"><code>If you would like to use Docker as a non-root user, you should now consider
+adding your user to the &#34;docker&#34; group with something like:
 
-<h2 id="docker-install">Docker Install …</h2>
-                                <p class="readmore"><a href="https://twrory.com/2018/12/12/docker-install/">阅读全文</a></p>
-                            </div>
-                        </article>
-                    
+  sudo usermod -aG docker your-user
+</code></pre><h4 id="3-啟動-docker">3. 啟動 Docker</h4>
+<pre tabindex="0"><code># systemctl enable docker.service
+# systemctl start docker.service
+</code></pre><h2 id="docker-的應用以-lnmp-為例">Docker 的應用以 LNMP 為例</h2>
+<h3 id="mariadb">Mariadb</h3>
+<p>我們使用目前Mariadb 最新版本的docker image 10.3</p>……
+            <p class="readmore"><a href="https://twrory.com/2018/12/12/docker-install/" target="_blank">Continue reading</a></p>
+        </div>
+    </article>
+    
 
-                    
+    
+
+
+
+
+
+</div>
+
+                    <footer id="footer">
+    <div>
+        &copy; 2024 <a href="https://twrory.com/">Rory Blog By </a>
+        
+    </div>
+    <br />
+    <div>
+        <div class="github-badge">
+            <a href="https://gohugo.io/" target="_black" rel="nofollow"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hugo</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://www.flysnow.org/" target="_black"><span class="badge-subject">Design by</span><span class="badge-value bg-brightgreen">飞雪无情</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://github.com/flysnow-org/maupassant-hugo" target="_black"><span class="badge-subject">Theme</span><span class="badge-value bg-yellowgreen">Maupassant</span></a>
+        </div>
+    </div>
+</footer>
+
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='https://twrory.com/js/totop.js?v=0.0.0' async=""></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LNYLGP6FL5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LNYLGP6FL5');
+</script>
+
+
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
 
 
 
 
                 </div>
-            </div>
 
-            <div id="secondary">
+                <div id="secondary">
     <section class="widget">
-        <form id="search" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+        <form id="search" action='//www.google.com/search' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
       
       <input type="text" name="q" maxlength="20" placeholder="Search">
       <input type="hidden" name="sitesearch" value="https://twrory.com/">
       <button type="submit" class="submit icon-search"></button>
 </form>
     </section>
-    
+
     <section class="widget">
-        <h3 class="widget-title">最近文章</h3>
+        <h3 class="widget-title">Latest articles</h3>
 <ul class="widget-list">
     
     <li>
-        <a href="https://twrory.com/2018/12/27/docker-compose-with-discuz/" title="基於 Docker Compose 的 Discuz X3.4">基於 Docker Compose 的 Discuz X3.4</a>
+        <a href="https://twrory.com/2018/12/27/docker-compose-with-discuz/" title="基於 Docker Compose 的 Discuz X3.4" target="_blank">基於 Docker Compose 的 Discuz X3.4</a>
     </li>
     
     <li>
-        <a href="https://twrory.com/2018/12/19/docker-compose-with-php-laravel-dev/" title="架構一個基於Docker Compose 的 PHP Laravel 開發環境">架構一個基於Docker Compose 的 PHP Laravel 開發環境</a>
+        <a href="https://twrory.com/2018/12/19/docker-compose-with-php-laravel-dev/" title="架構一個基於Docker Compose 的 PHP Laravel 開發環境" target="_blank">架構一個基於Docker Compose 的 PHP Laravel 開發環境</a>
     </li>
     
     <li>
-        <a href="https://twrory.com/2018/12/18/snippingtool-windows10/" title="Windows10-內建好用的截屏工具">Windows10-內建好用的截屏工具</a>
+        <a href="https://twrory.com/2018/12/18/snippingtool-windows10/" title="Windows10-內建好用的截屏工具" target="_blank">Windows10-內建好用的截屏工具</a>
     </li>
     
     <li>
-        <a href="https://twrory.com/2018/12/14/https-github-page-with-hugo/" title="Https Github Pages With Hugo">Https Github Pages With Hugo</a>
+        <a href="https://twrory.com/2018/12/14/https-github-page-with-hugo/" title="Https Github Pages With Hugo" target="_blank">Https Github Pages With Hugo</a>
     </li>
     
     <li>
-        <a href="https://twrory.com/2018/12/12/docker-install/" title="Docker 安裝筆記 - 以LNMP為例的應用">Docker 安裝筆記 - 以LNMP為例的應用</a>
+        <a href="https://twrory.com/2018/12/12/docker-install/" title="Docker 安裝筆記 - 以LNMP為例的應用" target="_blank">Docker 安裝筆記 - 以LNMP為例的應用</a>
     </li>
     
 </ul>
@@ -159,38 +222,26 @@
     
 
     <section class="widget">
-        <h3 class="widget-title">分类</h3>
+        <h3 class="widget-title"><a href='https://twrory.com/categories/'>Categories</a></h3>
 <ul class="widget-list">
     
-    <li>
-        <a href="https://twrory.com/categories/docker/">Docker(3)</a>
-    </li>
+    <li><a href="https://twrory.com/categories/docker/">Docker (3)</a></li>
     
-    <li>
-        <a href="https://twrory.com/categories/github/">GitHub(3)</a>
-    </li>
+    <li><a href="https://twrory.com/categories/github/">GitHub (3)</a></li>
     
-    <li>
-        <a href="https://twrory.com/categories/golang/">Golang(1)</a>
-    </li>
+    <li><a href="https://twrory.com/categories/golang/">Golang (1)</a></li>
     
-    <li>
-        <a href="https://twrory.com/categories/php/">PHP(2)</a>
-    </li>
+    <li><a href="https://twrory.com/categories/php/">PHP (2)</a></li>
     
-    <li>
-        <a href="https://twrory.com/categories/%E5%B0%8F%E5%B7%A5%E5%85%B7/">小工具(1)</a>
-    </li>
+    <li><a href="https://twrory.com/categories/%E5%B0%8F%E5%B7%A5%E5%85%B7/">小工具 (1)</a></li>
     
-    <li>
-        <a href="https://twrory.com/categories/%E6%9E%B6%E7%AB%99/">架站(1)</a>
-    </li>
+    <li><a href="https://twrory.com/categories/%E6%9E%B6%E7%AB%99/">架站 (1)</a></li>
     
 </ul>
     </section>
 
     <section class="widget">
-        <h3 class="widget-title">标签</h3>
+        <h3 class="widget-title"><a href='https://twrory.com/tags/'>Tags</a></h3>
 <div class="tagcloud">
     
     <a href="https://twrory.com/tags/cloudflare/">Cloudflare</a>
@@ -211,9 +262,9 @@
     
     <a href="https://twrory.com/tags/hugo/">Hugo</a>
     
-    <a href="https://twrory.com/tags/lnmp/">LNMP</a>
-    
     <a href="https://twrory.com/tags/laravel/">Laravel</a>
+    
+    <a href="https://twrory.com/tags/lnmp/">LNMP</a>
     
     <a href="https://twrory.com/tags/mariadb/">Mariadb</a>
     
@@ -232,7 +283,7 @@
 
     
 <section class="widget">
-    <h3 class="widget-title">友情链接</h3>
+    <h3 class="widget-title">Links</h3>
     <ul class="widget-list">
         
         <li>
@@ -248,46 +299,15 @@
 
 
     <section class="widget">
-        <h3 class="widget-title">其它</h3>
+        <h3 class="widget-title">Meta</h3>
         <ul class="widget-list">
-            <li><a href="https://twrory.com/index.xml">文章 RSS</a></li>
+            <li><a href="https://twrory.com/index.xml">RSS</a></li>
         </ul>
     </section>
 </div>
+            </div>
         </div>
     </div>
-</div>
-<footer id="footer">
-    <div class="container">
-        &copy; 2018 <a href="https://twrory.com/">Rory Blog By Rory</a>.
-        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
-        <a href="http://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
-        
-    </div>
-</footer>
-
-
-<a id="rocket" href="#top"></a>
-<script type="text/javascript" src="https://twrory.com/js/totop.js?v=0.0.0" async=""></script>
-
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-131478706-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
-
-<script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
-
-
-
-
-
 </body>
+
 </html>

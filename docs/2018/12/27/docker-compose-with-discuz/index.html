@@ -3,50 +3,48 @@
 <head>
 
     <meta charset="utf-8">
-    <meta name="generator" content="Hugo 0.52" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
 
     <title>基於 Docker Compose 的 Discuz X3.4 | Rory Blog</title>
     <meta property="og:title" content="基於 Docker Compose 的 Discuz X3.4 - Rory Blog">
     <meta property="og:type" content="article">
         
-    <meta property="article:published_time" content="2018-12-27T22:09:02&#43;08:00">
+    <meta property="article:published_time" content='2018-12-27T22:09:02&#43;08:00'>
         
         
-    <meta property="article:modified_time" content="2018-12-27T22:09:02&#43;08:00">
+    <meta property="article:modified_time" content='2018-12-27T22:09:02&#43;08:00'>
         
     <meta name="Keywords" content="linux,docker,ci,cd,php,go,golang,nodejs,lean,agile,murmur,小程序">
     <meta name="description" content="基於 Docker Compose 的 Discuz X3.4">
         
-    <meta name="author" content="Rory">
+    <meta name="author" content="">
     <meta property="og:url" content="https://twrory.com/2018/12/27/docker-compose-with-discuz/">
-    <link rel="shortcut icon" href="https://twrory.com/favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" href="https://twrory.com/css/normalize.css">
-    
-        <link rel="stylesheet" href="https://twrory.com/css/prism.css">
-    
-    <link rel="stylesheet" href="https://twrory.com/css/style.css">
-    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-
-    
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-9397388882562141",
-        enable_page_level_ads: true
-    });
-    </script>
+    <link rel="shortcut icon" href='https://twrory.com/favicon.ico' type="image/x-icon">
+    <link rel="icon" href='https://twrory.com/favicon.png' type="image/png">
+    <link rel="alternate icon" href='https://twrory.com/favicon.png' type="image/svg+xml">
     
 
+    <link rel="stylesheet" href='https://twrory.com/css/normalize.css'>
+    <link rel="stylesheet" href='https://twrory.com/css/style.css'>
+    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    
+    <script data-ad-client="ca-pub-9397388882562141" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    
+    
+    
     
     
 </head>
 
+
 <body>
-<header id="header" class="clearfix">
+    <header id="header" class="clearfix">
     <div class="container">
         <div class="col-group">
             <div class="site-name ">
@@ -59,7 +57,7 @@
             </div>
             <div>
                 <nav id="nav-menu" class="clearfix">
-                    <a class="current" href="https://twrory.com/">首页</a>
+                    <a class="current" href="https://twrory.com/">Home</a>
                     
                     <a  href="https://twrory.com/archives/" title="歸檔">歸檔</a>
                     
@@ -71,50 +69,52 @@
     </div>
 </header>
 
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
 
-<div id="body">
-    <div class="container">
-        <div class="col-group">
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">基於 Docker Compose 的 Discuz X3.4</h1>
+        </header>
+        
+  <time datetime="2018-12-27T14:09:02Z" class="post-meta meta-date dt-published">
+    2018-12-27
+  </time>
 
-            <div class="col-8" id="main">
-                <div class="res-cons">
-                    <article class="post">
-                        <header>
-                            <h1 class="post-title">基於 Docker Compose 的 Discuz X3.4</h1>
-                        </header>
-                        <date class="post-meta meta-date">
-                            2018年12月27日
-                        </date>
-                        
-                        <div class="post-meta meta-category">
-                            |
-                            
-                                <a href="https://twrory.com/categories/php">PHP</a>
-                            
-                                <a href="https://twrory.com/categories/docker">Docker</a>
-                            
-                                <a href="https://twrory.com/categories/github">GitHub</a>
-                            
-                        </div>
-                        
-                        
-                        <div class="post-meta">
-                            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span> 阅读</span></span>
-                        </div>
-                        
-                        <div class="post-content">
-                            
 
-<h3 id="discuz">Discuz</h3>
+<div class="post-meta meta-category">
+  <span>&nbsp;|</span>
+  
+    <a href='https://twrory.com/categories/php' target="_blank">PHP</a>
+  
+    <a href='https://twrory.com/categories/docker' target="_blank">Docker</a>
+  
+    <a href='https://twrory.com/categories/github' target="_blank">GitHub</a>
+  
+</div>
 
+
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">&nbsp;|
+                <span id="busuanzi_value_page_pv"></span> <span>reads</span>
+            </span>
+        </div>
+        
+        
+        <div class="post-content">
+            <h3 id="discuz">Discuz</h3>
 <blockquote>
 <p>Discuz!是個可免費下載的PHP網路論壇程式，簡稱DZ，由戴志康（Crossday）所創立，目前最新版本是Discuz! X3.4。[2]前身為Crossday Bulletin（CDB），最初改自XMBForum，爾後改寫成為現今的Discuz!社群論壇程式，由康盛創想所有（現已被騰訊收購）。現在Discuz!已成為大中華地區最多用戶使用的論壇程式。</p>
 </blockquote>
-
-<p>我們直接使用先前介紹 <a href="https://twrory.com/2018/12/19/docker-compose-with-php-laravel-dev/">架構一個基於Docker Compose 的 PHP Laravel 開發環境</a> 的整個環境<br />
+<p>我們直接使用先前介紹 <a href="https://twrory.com/2018/12/19/docker-compose-with-php-laravel-dev/">架構一個基於Docker Compose 的 PHP Laravel 開發環境</a> 的整個環境<br>
 準備好 docker 及 docker compose 的環境後我們就可以開始建置 Discuz 了</p>
-
-<pre><code>git clone https://github.com/roryamos/LaravelDev.git Discuz
+<pre tabindex="0"><code>git clone https://github.com/roryamos/LaravelDev.git Discuz
 cd Discuz
 tree
 .
@@ -140,16 +140,10 @@ tree
 └── var-lib-mysql
 
 8 directories, 12 files
-</code></pre>
-
-<h4 id="1-clone-discuz-最新的代碼">1. clone Discuz 最新的代碼</h4>
-
-<pre><code>git clone https://gitee.com/ComsenzDiscuz/DiscuzX.git html/discuz
-</code></pre>
-
-<h4 id="2-修改-nginx-的路徑配置">2. 修改 Nginx 的路徑配置</h4>
-
-<pre><code>vi nginx/default.conf
+</code></pre><h4 id="1-clone-discuz-最新的代碼">1. clone Discuz 最新的代碼</h4>
+<pre tabindex="0"><code>git clone https://gitee.com/ComsenzDiscuz/DiscuzX.git html/discuz
+</code></pre><h4 id="2-修改-nginx-的路徑配置">2. 修改 Nginx 的路徑配置</h4>
+<pre tabindex="0"><code>vi nginx/default.conf
 --------------------------------
     root /var/www/html/discuz/upload;
     location / {
@@ -158,15 +152,13 @@ tree
     }
 --------------------------------
 ./restart.sh
-</code></pre>
+</code></pre><p>打開網址瀏覽 http://youripaddress/, 調整安裝嚮導所提示的檔案權限.<br>
+緊接著你會看到一個問題mysqli_connect() advice_mysqli_connect<br>
 
-<p>打開網址瀏覽 <a href="http://youripaddress/">http://youripaddress/</a>, 調整安裝嚮導所提示的檔案權限.<br />
-緊接著你會看到一個問題mysqli_connect() advice_mysqli_connect<br />
-<img src="https://twrory.com/images/discuz/php-mysqli-connect-error.png" alt="Image of winrun" /></p>
-
+        <img class="mx-auto" alt="Image of winrun" src="https://twrory.com/images/discuz/php-mysqli-connect-error.png" />   
+    </p>
 <h4 id="3-為-php-fpm-添加模塊">3. 為 php-fpm 添加模塊</h4>
-
-<pre><code>vi phpfpm/Dockerfile
+<pre tabindex="0"><code>vi phpfpm/Dockerfile
 -------------------------------------
 FROM php:7.3-fpm
 RUN docker-php-ext-install mysqli pdo pdo_mysql
@@ -178,37 +170,34 @@ vi docker-compose.yml
       build: phpfpm
 -------------------------------------
 ./restart.sh
-</code></pre>
-
-<h4 id="4-ftp-service">4. ftp service</h4>
-
-<p>通常裝了 Discuz 後，還會需要 ftp 來協助安裝些模板模塊的, 所以我們連ftp 服務都一併搭建好<br />
+</code></pre><h4 id="4-ftp-service">4. ftp service</h4>
+<p>通常裝了 Discuz 後，還會需要 ftp 來協助安裝些模板模塊的, 所以我們連ftp 服務都一併搭建好<br>
 以後利用 ftp client 就可以輕鬆管理 Discuz 了</p>
-
-<pre><code>vi docker-compose.yml
+<pre tabindex="0"><code>vi docker-compose.yml
 -------------------------------------
   ftp:
     image: bogem/ftp
     ports:
-        - &quot;20:20&quot;
-        - &quot;21:21&quot;
-        - &quot;47400-47470:47400-47470&quot;
+        - &#34;20:20&#34;
+        - &#34;21:21&#34;
+        - &#34;47400-47470:47400-47470&#34;
     volumes:
-        - &quot;./html/discuz:/home/vsftpd&quot;
+        - &#34;./html/discuz:/home/vsftpd&#34;
     environment:
         FTP_USER: ftpuser
         FTP_PASS: ftppass
         PASV_ADDRESS: 0.0.0.0
     restart: always
 -------------------------------------
-</code></pre>
-
-<p>最後，我們照舊提供一個懶人包給看到最後的觀眾朋友們享用.
+</code></pre><p>最後，我們照舊提供一個懶人包給看到最後的觀眾朋友們享用.
 <a href="https://github.com/roryamos/DockerDiscuz">https://github.com/roryamos/DockerDiscuz</a></p>
 
-                        </div>
+        </div>
 
-                        
+        
+
+
+        
 
 <div class="post-archive">
     <h2>See Also</h2>
@@ -228,27 +217,27 @@ vi docker-compose.yml
 </div>
 
 
-                        <div class="post-meta meta-tags">
-                            
-                            <ul class="clearfix">
-                                
-                                <li><a href="https://twrory.com/tags/docker">Docker</a></li>
-                                
-                                <li><a href="https://twrory.com/tags/github">GitHub</a></li>
-                                
-                                <li><a href="https://twrory.com/tags/php">PHP</a></li>
-                                
-                                <li><a href="https://twrory.com/tags/ftp">FTP</a></li>
-                                
-                                <li><a href="https://twrory.com/tags/discuz">Discuz</a></li>
-                                
-                                <li><a href="https://twrory.com/tags/docker-compose">Docker-Compose</a></li>
-                                
-                            </ul>
-                            
-                        </div>
-                    </article>
-                    
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='https://twrory.com/tags/docker' target="_blank">Docker</a></li>
+                
+                <li><a href='https://twrory.com/tags/github' target="_blank">GitHub</a></li>
+                
+                <li><a href='https://twrory.com/tags/php' target="_blank">PHP</a></li>
+                
+                <li><a href='https://twrory.com/tags/ftp' target="_blank">FTP</a></li>
+                
+                <li><a href='https://twrory.com/tags/discuz' target="_blank">Discuz</a></li>
+                
+                <li><a href='https://twrory.com/tags/docker-compose' target="_blank">Docker-Compose</a></li>
+                
+            </ul>
+            
+        </div>
+    </article>
+    
     
 
     
@@ -263,40 +252,172 @@ vi docker-compose.yml
       </script>
     </div>
     
+    
+    
+
+</div>
+
+                    <footer id="footer">
+    <div>
+        &copy; 2024 <a href="https://twrory.com/">Rory Blog By </a>
+        
+    </div>
+    <br />
+    <div>
+        <div class="github-badge">
+            <a href="https://gohugo.io/" target="_black" rel="nofollow"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hugo</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://www.flysnow.org/" target="_black"><span class="badge-subject">Design by</span><span class="badge-value bg-brightgreen">飞雪无情</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://github.com/flysnow-org/maupassant-hugo" target="_black"><span class="badge-subject">Theme</span><span class="badge-value bg-yellowgreen">Maupassant</span></a>
+        </div>
+    </div>
+</footer>
+
+
+    
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='https://twrory.com/js/totop.js?v=0.0.0' async=""></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LNYLGP6FL5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LNYLGP6FL5');
+</script>
+
+
+
+<style type="text/css">
+div.highlight {
+    position: relative;
+    margin: 1em 0px;
+}
+
+.copy-code {
+    display: none;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(78, 78, 78, 0.8);
+    border-radius: var(--radius);
+    padding: 0 5px;
+    font: inherit;
+    user-select: none;
+    cursor: pointer;
+    border: 0;
+    --radius: 8px;
+}
+
+div.highlight:hover .copy-code,pre:hover .copy-code {
+    display: block;
+}
+
+</style>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
                 </div>
-            </div>
-            <div id="secondary">
+
+                <div id="secondary">
     <section class="widget">
-        <form id="search" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+        <form id="search" action='//www.google.com/search' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
       
       <input type="text" name="q" maxlength="20" placeholder="Search">
       <input type="hidden" name="sitesearch" value="https://twrory.com/">
       <button type="submit" class="submit icon-search"></button>
 </form>
     </section>
-    
+
     <section class="widget">
-        <h3 class="widget-title">最近文章</h3>
+        <h3 class="widget-title">Latest articles</h3>
 <ul class="widget-list">
     
     <li>
-        <a href="https://twrory.com/2018/12/27/docker-compose-with-discuz/" title="基於 Docker Compose 的 Discuz X3.4">基於 Docker Compose 的 Discuz X3.4</a>
+        <a href="https://twrory.com/2018/12/27/docker-compose-with-discuz/" title="基於 Docker Compose 的 Discuz X3.4" target="_blank">基於 Docker Compose 的 Discuz X3.4</a>
     </li>
     
     <li>
-        <a href="https://twrory.com/2018/12/19/docker-compose-with-php-laravel-dev/" title="架構一個基於Docker Compose 的 PHP Laravel 開發環境">架構一個基於Docker Compose 的 PHP Laravel 開發環境</a>
+        <a href="https://twrory.com/2018/12/19/docker-compose-with-php-laravel-dev/" title="架構一個基於Docker Compose 的 PHP Laravel 開發環境" target="_blank">架構一個基於Docker Compose 的 PHP Laravel 開發環境</a>
     </li>
     
     <li>
-        <a href="https://twrory.com/2018/12/18/snippingtool-windows10/" title="Windows10-內建好用的截屏工具">Windows10-內建好用的截屏工具</a>
+        <a href="https://twrory.com/2018/12/18/snippingtool-windows10/" title="Windows10-內建好用的截屏工具" target="_blank">Windows10-內建好用的截屏工具</a>
     </li>
     
     <li>
-        <a href="https://twrory.com/2018/12/14/https-github-page-with-hugo/" title="Https Github Pages With Hugo">Https Github Pages With Hugo</a>
+        <a href="https://twrory.com/2018/12/14/https-github-page-with-hugo/" title="Https Github Pages With Hugo" target="_blank">Https Github Pages With Hugo</a>
     </li>
     
     <li>
-        <a href="https://twrory.com/2018/12/12/docker-install/" title="Docker 安裝筆記 - 以LNMP為例的應用">Docker 安裝筆記 - 以LNMP為例的應用</a>
+        <a href="https://twrory.com/2018/12/12/docker-install/" title="Docker 安裝筆記 - 以LNMP為例的應用" target="_blank">Docker 安裝筆記 - 以LNMP為例的應用</a>
     </li>
     
 </ul>
@@ -305,38 +426,26 @@ vi docker-compose.yml
     
 
     <section class="widget">
-        <h3 class="widget-title">分类</h3>
+        <h3 class="widget-title"><a href='https://twrory.com/categories/'>Categories</a></h3>
 <ul class="widget-list">
     
-    <li>
-        <a href="https://twrory.com/categories/docker/">Docker(3)</a>
-    </li>
+    <li><a href="https://twrory.com/categories/docker/">Docker (3)</a></li>
     
-    <li>
-        <a href="https://twrory.com/categories/github/">GitHub(3)</a>
-    </li>
+    <li><a href="https://twrory.com/categories/github/">GitHub (3)</a></li>
     
-    <li>
-        <a href="https://twrory.com/categories/golang/">Golang(1)</a>
-    </li>
+    <li><a href="https://twrory.com/categories/golang/">Golang (1)</a></li>
     
-    <li>
-        <a href="https://twrory.com/categories/php/">PHP(2)</a>
-    </li>
+    <li><a href="https://twrory.com/categories/php/">PHP (2)</a></li>
     
-    <li>
-        <a href="https://twrory.com/categories/%E5%B0%8F%E5%B7%A5%E5%85%B7/">小工具(1)</a>
-    </li>
+    <li><a href="https://twrory.com/categories/%E5%B0%8F%E5%B7%A5%E5%85%B7/">小工具 (1)</a></li>
     
-    <li>
-        <a href="https://twrory.com/categories/%E6%9E%B6%E7%AB%99/">架站(1)</a>
-    </li>
+    <li><a href="https://twrory.com/categories/%E6%9E%B6%E7%AB%99/">架站 (1)</a></li>
     
 </ul>
     </section>
 
     <section class="widget">
-        <h3 class="widget-title">标签</h3>
+        <h3 class="widget-title"><a href='https://twrory.com/tags/'>Tags</a></h3>
 <div class="tagcloud">
     
     <a href="https://twrory.com/tags/cloudflare/">Cloudflare</a>
@@ -357,9 +466,9 @@ vi docker-compose.yml
     
     <a href="https://twrory.com/tags/hugo/">Hugo</a>
     
-    <a href="https://twrory.com/tags/lnmp/">LNMP</a>
-    
     <a href="https://twrory.com/tags/laravel/">Laravel</a>
+    
+    <a href="https://twrory.com/tags/lnmp/">LNMP</a>
     
     <a href="https://twrory.com/tags/mariadb/">Mariadb</a>
     
@@ -378,7 +487,7 @@ vi docker-compose.yml
 
     
 <section class="widget">
-    <h3 class="widget-title">友情链接</h3>
+    <h3 class="widget-title">Links</h3>
     <ul class="widget-list">
         
         <li>
@@ -394,61 +503,15 @@ vi docker-compose.yml
 
 
     <section class="widget">
-        <h3 class="widget-title">其它</h3>
+        <h3 class="widget-title">Meta</h3>
         <ul class="widget-list">
-            <li><a href="https://twrory.com/index.xml">文章 RSS</a></li>
+            <li><a href="https://twrory.com/index.xml">RSS</a></li>
         </ul>
     </section>
 </div>
+            </div>
         </div>
     </div>
-</div>
-<footer id="footer">
-    <div class="container">
-        &copy; 2018 <a href="https://twrory.com/">Rory Blog By Rory</a>.
-        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
-        <a href="http://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
-        
-    </div>
-</footer>
-
-
-    <script type="text/javascript">
-    
-    (function(){
-        $("pre code").parent().addClass("line-numbers")
-    }())
-
-    window.MathJax = {
-        tex2jax: {
-            inlineMath: [ ['$','$'] ],
-            processEscapes: true
-        }
-    };
-    </script>
-    <script type="text/javascript" src="https://twrory.com/js/prism.js" async="true"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
-
-<a id="rocket" href="#top"></a>
-<script type="text/javascript" src="https://twrory.com/js/totop.js?v=0.0.0" async=""></script>
-
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-131478706-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
-
-<script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
-
-
-
-
 </body>
+
 </html>

@@ -8,11 +8,12 @@ publishDir = "docs"
 canonifyurls = true
 
 # Pagination
-paginate = 10
-paginatePath = "page"
+[pagination]
+pagerSize = 10
+path = "page"
 
 preserveTaxonomyNames = true
-googleAnalytics = "UA-131478706-1"
+# googleAnalytics = "G-LNYLGP6FL5"
 
 [permalinks]
     post = "/:year/:month/:day/:filename/"
@@ -22,9 +23,6 @@ googleAnalytics = "UA-131478706-1"
     tag = "tags"
     category = "categories"
 
-[author]
-    name = "Rory"
-
 [params]
     author = "Rory"
     subtitle = "專注於Linux, Docker, CI/CD, Golang, Lean and Agile"
@@ -33,6 +31,7 @@ googleAnalytics = "UA-131478706-1"
     busuanzi = true
     # Google Ads
     googleAd = "ca-pub-9397388882562141"
+    googleAnalytics = "G-LNYLGP6FL5"
 
 [params.utteranc]
     enable = true
